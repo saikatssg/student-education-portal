@@ -1,0 +1,405 @@
+[{
+  "_id": {
+    "$oid": "6aa420de9ff84875ad449382"
+  },
+  "sid": "SID-001",
+  "fname": "SIMA",
+  "lname": "DAS",
+  "username": "sima",
+  "password": "Sima@123",
+  "email": "sima@gmail.com",
+  "phone": "6547893214",
+  "city": "KOLKATA",
+  "dob": {
+    "$date": "2004-09-24T00:00:00.000Z"
+  },
+  "photo": "1789141214246.jpg",
+  "role": "candidate",
+  "prevCode": [],
+  "created_at": {
+    "$date": "2026-09-11T15:40:14.253Z"
+  },
+  "__v": 0,
+  "batchcode": "CCOA/09202601",
+  "crtid": "CRT/CCOA/09202601/SID-001/001"
+},
+{
+  "_id": {
+    "$oid": "6aa50917cc3e4f4720de41e2"
+  },
+  "sid": "SID-002",
+  "fname": "Sophia",
+  "lname": "Smith",
+  "username": "sophia",
+  "password": "Sophia@123",
+  "email": "sophia@gmail.com",
+  "phone": "9999999990",
+  "city": "New York",
+  "dob": {
+    "$date": "2000-01-01T00:00:00.000Z"
+  },
+  "photo": "1789200663049_media_1789200576388.jpg",
+  "role": "candidate",
+  "batchcode": "CID/CCWD/01/012026/001",
+  "crtid": "CRT/CID/CCWD/01/012026/001/SID-002/001",
+  "prevCode": [],
+  "completed_batches": [],
+  "created_at": {
+    "$date": "2026-09-12T08:11:03.128Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6aa50917cc3e4f4720de41e3"
+  },
+  "sid": "SID-003",
+  "fname": "Emma",
+  "lname": "Johnson",
+  "username": "emma",
+  "password": "Emma@123",
+  "email": "emma@gmail.com",
+  "phone": "9999999991",
+  "city": "New York",
+  "dob": {
+    "$date": "2000-01-01T00:00:00.000Z"
+  },
+  "photo": "1789200663064_media_1789200576417.jpg",
+  "role": "candidate",
+  "batchcode": "CID/CCWD/01/012026/001",
+  "crtid": "CRT/CID/CCWD/01/012026/001/SID-003/001",
+  "prevCode": [],
+  "completed_batches": [],
+  "created_at": {
+    "$date": "2026-09-12T08:11:03.133Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6aa50917cc3e4f4720de41e4"
+  },
+  "sid": "SID-004",
+  "fname": "Olivia",
+  "lname": "Williams",
+  "username": "olivia",
+  "password": "Olivia@123",
+  "email": "olivia@gmail.com",
+  "phone": "9999999992",
+  "city": "New York",
+  "dob": {
+    "$date": "2000-01-01T00:00:00.000Z"
+  },
+  "photo": "1789200663079_media_1789200576442.jpg",
+  "role": "candidate",
+  "batchcode": "CID/CCWD/01/012026/001",
+  "crtid": "CRT/CID/CCWD/01/012026/001/SID-004/001",
+  "prevCode": [],
+  "completed_batches": [],
+  "created_at": {
+    "$date": "2026-09-12T08:11:03.136Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6aa50917cc3e4f4720de41e5"
+  },
+  "sid": "SID-005",
+  "fname": "Noah",
+  "lname": "Brown",
+  "username": "noah",
+  "password": "Noah@123",
+  "email": "noah@gmail.com",
+  "phone": "9999999993",
+  "city": "New York",
+  "dob": {
+    "$date": "2000-01-01T00:00:00.000Z"
+  },
+  "photo": "1789200663094_media_1789200576489.jpg",
+  "role": "candidate",
+  "batchcode": "CID/CCWD/01/012026/001",
+  "crtid": "CRT/CID/CCWD/01/012026/001/SID-005/001",
+  "prevCode": [],
+  "completed_batches": [],
+  "created_at": {
+    "$date": "2026-09-12T08:11:03.140Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6aa50917cc3e4f4720de41e6"
+  },
+  "sid": "SID-006",
+  "fname": "Liam",
+  "lname": "Jones",
+  "username": "liam",
+  "password": "Liam@123",
+  "email": "liam@gmail.com",
+  "phone": "9999999994",
+  "city": "New York",
+  "dob": {
+    "$date": "2000-01-01T00:00:00.000Z"
+  },
+  "photo": "1789200663110_media_1789200576519.jpg",
+  "role": "candidate",
+  "batchcode": "CID/CCWD/01/012026/001",
+  "crtid": "CRT/CID/CCWD/01/012026/001/SID-006/001",
+  "prevCode": [],
+  "completed_batches": [],
+  "created_at": {
+    "$date": "2026-09-12T08:11:03.143Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6aa529099ff84875ad44939f"
+  },
+  "sid": "SID-007",
+  "fname": "Peter",
+  "lname": "Anderson",
+  "username": "peter",
+  "password": "Peter@123",
+  "email": "peter@gmail.com",
+  "phone": "6549872581",
+  "city": "Hong Kong",
+  "dob": {
+    "$date": "2003-04-22T00:00:00.000Z"
+  },
+  "photo": "1789208841076.jpg",
+  "role": "candidate",
+  "prevCode": [],
+  "created_at": {
+    "$date": "2026-09-12T10:27:21.079Z"
+  },
+  "__v": 0,
+  "batchcode": "CID/BCA/03/092025/001",
+  "crtid": null
+},
+{
+  "_id": {
+    "$oid": "6aa529cc9ff84875ad4493a0"
+  },
+  "sid": "SID-008",
+  "fname": "Rajesh",
+  "lname": "Yadav",
+  "username": "reajesh",
+  "password": "Rajesh@123",
+  "email": "rajesh@gmail.com",
+  "phone": "8976452317",
+  "city": "Pune",
+  "dob": {
+    "$date": "2003-06-15T00:00:00.000Z"
+  },
+  "photo": "1789209036387.jpg",
+  "role": "candidate",
+  "prevCode": [],
+  "created_at": {
+    "$date": "2026-09-12T10:30:36.390Z"
+  },
+  "__v": 0,
+  "batchcode": "CID/BCA/03/092025/001",
+  "crtid": null
+},
+{
+  "_id": {
+    "$oid": "6aa52b3f9ff84875ad4493a1"
+  },
+  "sid": "SID-009",
+  "fname": "Amit",
+  "lname": "Sen",
+  "username": "amit",
+  "password": "Amit@123",
+  "email": "amit@gmail.com",
+  "phone": "8975643214",
+  "city": "Kolkata",
+  "dob": {
+    "$date": "2003-07-13T00:00:00.000Z"
+  },
+  "photo": "1789209407249.jpg",
+  "role": "candidate",
+  "prevCode": [],
+  "created_at": {
+    "$date": "2026-09-12T10:36:47.251Z"
+  },
+  "__v": 0,
+  "batchcode": "CID/BCA/03/092025/001",
+  "crtid": null
+},
+{
+  "_id": {
+    "$oid": "6aa52bb99ff84875ad4493a2"
+  },
+  "sid": "SID-010",
+  "fname": "Dinesh",
+  "lname": "Das",
+  "username": "dinesh",
+  "password": "Dinesh@123",
+  "email": "dinesh@gmail.com",
+  "phone": "8975643217",
+  "city": "Kolkata",
+  "dob": {
+    "$date": "2003-08-20T00:00:00.000Z"
+  },
+  "photo": "1789209529273.jpg",
+  "role": "candidate",
+  "prevCode": [],
+  "created_at": {
+    "$date": "2026-09-12T10:38:49.275Z"
+  },
+  "__v": 0,
+  "batchcode": "CID/BCA/03/092025/001",
+  "crtid": null
+},
+{
+  "_id": {
+    "$oid": "6aa52c229ff84875ad4493a3"
+  },
+  "sid": "SID-011",
+  "fname": "Souvik",
+  "lname": "Gupta",
+  "username": "souvik",
+  "password": "Souvik@123",
+  "email": "souvik@gmail.com",
+  "phone": "8965743214",
+  "city": "New Delhi",
+  "dob": {
+    "$date": "2003-10-23T00:00:00.000Z"
+  },
+  "photo": "1789209634209.jpg",
+  "role": "candidate",
+  "prevCode": [],
+  "created_at": {
+    "$date": "2026-09-12T10:40:34.211Z"
+  },
+  "__v": 0,
+  "batchcode": "CID/BCA/03/092025/001",
+  "crtid": null
+},
+{
+  "_id": {
+    "$oid": "6aa52d819ff84875ad4493a4"
+  },
+  "sid": "SID-012",
+  "fname": "EVA",
+  "lname": "KIM",
+  "username": "eva",
+  "password": "Eva@123",
+  "email": "eva@gmail.com",
+  "phone": "5647893214",
+  "city": "Hong Kong",
+  "dob": {
+    "$date": "2003-01-12T00:00:00.000Z"
+  },
+  "photo": "1789209985487.jpg",
+  "role": "candidate",
+  "prevCode": [],
+  "created_at": {
+    "$date": "2026-09-12T10:46:25.490Z"
+  },
+  "__v": 0,
+  "batchcode": "CID/BCA/03/092025/001",
+  "crtid": null
+},
+{
+  "_id": {
+    "$oid": "6aa54a339ff84875ad4493a5"
+  },
+  "sid": "SID-013",
+  "fname": "Yuna",
+  "lname": "Ito",
+  "username": "yuna",
+  "password": "Yuna@123",
+  "email": "yuna@gmail.com",
+  "phone": "6547894785",
+  "city": "Tokyo",
+  "dob": {
+    "$date": "2003-02-17T00:00:00.000Z"
+  },
+  "photo": "1789217331626.jpg",
+  "role": "candidate",
+  "prevCode": [],
+  "created_at": {
+    "$date": "2026-09-12T12:48:51.629Z"
+  },
+  "__v": 0,
+  "batchcode": "CID/BCA/03/092025/001",
+  "crtid": null
+},
+{
+  "_id": {
+    "$oid": "6aa54b339ff84875ad4493a6"
+  },
+  "sid": "SID-014",
+  "fname": "Milana",
+  "lname": "Fedorova",
+  "username": "milana",
+  "password": "Milana@123",
+  "email": "milana@gmail.com",
+  "phone": "5648973281",
+  "city": "Moskow",
+  "dob": {
+    "$date": "2003-03-16T00:00:00.000Z"
+  },
+  "photo": "1789217587776.jpg",
+  "role": "candidate",
+  "prevCode": [],
+  "created_at": {
+    "$date": "2026-09-12T12:53:07.781Z"
+  },
+  "__v": 0,
+  "batchcode": "CID/BCA/03/092025/001",
+  "crtid": null
+},
+{
+  "_id": {
+    "$oid": "6aa54bb89ff84875ad4493a7"
+  },
+  "sid": "SID-015",
+  "fname": "Freya",
+  "lname": "Jones",
+  "username": "freya",
+  "password": "Freya@123",
+  "email": "freya@gmail.com",
+  "phone": "7698458793",
+  "city": "London",
+  "dob": {
+    "$date": "2003-06-21T00:00:00.000Z"
+  },
+  "photo": "1789217720136.jpg",
+  "role": "candidate",
+  "prevCode": [],
+  "created_at": {
+    "$date": "2026-09-12T12:55:20.139Z"
+  },
+  "__v": 0,
+  "batchcode": "CID/BCA/03/092025/001",
+  "crtid": null
+},
+{
+  "_id": {
+    "$oid": "6aa54c409ff84875ad4493a8"
+  },
+  "sid": "SID-016",
+  "fname": "Aditi",
+  "lname": "Verma",
+  "username": "aditi",
+  "password": "Aditi@123",
+  "email": "aditi@gmail.com",
+  "phone": "6895743652",
+  "city": "Mumbai",
+  "dob": {
+    "$date": "2003-07-18T00:00:00.000Z"
+  },
+  "photo": "1789217856991.jpg",
+  "role": "candidate",
+  "prevCode": [],
+  "created_at": {
+    "$date": "2026-09-12T12:57:36.993Z"
+  },
+  "__v": 0,
+  "batchcode": "CID/BCA/03/092025/001",
+  "crtid": null
+}]

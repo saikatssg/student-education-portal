@@ -1,0 +1,57 @@
+[{
+  "_id": {
+    "$oid": "6aa421249ff84875ad449383"
+  },
+  "batchcode": "CCOA/09202601",
+  "courseid": "CID/CCOA/01/001",
+  "start_date": {
+    "$date": "2026-10-04T00:00:00.000Z"
+  },
+  "end_date": {
+    "$date": "2027-01-31T00:00:00.000Z"
+  },
+  "year": "2026",
+  "status": "Active",
+  "created_at": {
+    "$date": "2026-09-11T15:41:24.683Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6aa50917cc3e4f4720de41e1"
+  },
+  "batchcode": "CID/CCWD/01/012026/001",
+  "courseid": "CID/CCWD/01/001",
+  "start_date": {
+    "$date": "2026-01-01T00:00:00.000Z"
+  },
+  "end_date": {
+    "$date": "2026-05-14T00:00:00.000Z"
+  },
+  "year": "2026",
+  "status": "Completed",
+  "created_at": {
+    "$date": "2026-09-12T08:11:03.044Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6aa51ee09ff84875ad44939e"
+  },
+  "batchcode": "CID/BCA/03/092025/001",
+  "courseid": "CID/BCA/03/001",
+  "start_date": {
+    "$date": "2025-07-01T00:00:00.000Z"
+  },
+  "end_date": {
+    "$date": "2026-01-31T00:00:00.000Z"
+  },
+  "year": "2025",
+  "status": "Active",
+  "created_at": {
+    "$date": "2025-09-12T09:44:00.111Z"
+  },
+  "__v": 0
+}]

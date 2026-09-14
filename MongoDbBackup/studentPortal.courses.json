@@ -1,0 +1,120 @@
+[{
+  "_id": {
+    "$oid": "6a9fa11f26fcd39cc77e53a1"
+  },
+  "courseid": "CID/ACAD/01/001",
+  "coursename": "AutoCAD",
+  "course_type": "01",
+  "course_abbr": "ACAD",
+  "price": "8000.00",
+  "duration": "90",
+  "course_year": "2026"
+},
+{
+  "_id": {
+    "$oid": "6a9fa11f26fcd39cc77e53a2"
+  },
+  "courseid": "CID/BCA/03/001",
+  "coursename": "BCA",
+  "course_type": "03",
+  "course_abbr": "BCA",
+  "price": "45000.00",
+  "duration": "900",
+  "course_year": "2026"
+},
+{
+  "_id": {
+    "$oid": "6a9fa11f26fcd39cc77e53a3"
+  },
+  "courseid": "CID/CCOA/01/001",
+  "coursename": "Certificate Course in Office Automation",
+  "course_type": "01",
+  "course_abbr": "CCOA",
+  "price": "5000.00",
+  "duration": "80",
+  "course_year": "2026"
+},
+{
+  "_id": {
+    "$oid": "6a9fa11f26fcd39cc77e53a4"
+  },
+  "courseid": "CID/CCWD/01/001",
+  "coursename": "CC in Web Design",
+  "course_type": "01",
+  "course_abbr": "CCWD",
+  "price": "7500.00",
+  "duration": "100",
+  "course_year": "2026"
+},
+{
+  "_id": {
+    "$oid": "6a9fa11f26fcd39cc77e53a5"
+  },
+  "courseid": "CID/CS/01/001",
+  "coursename": "Cyber Security",
+  "course_type": "01",
+  "course_abbr": "CS",
+  "price": "11000.00",
+  "duration": "120",
+  "course_year": "2026"
+},
+{
+  "_id": {
+    "$oid": "6a9fa11f26fcd39cc77e53a6"
+  },
+  "courseid": "CID/CSD/02/001",
+  "coursename": "Computer Science Diploma",
+  "course_type": "02",
+  "course_abbr": "CSD",
+  "price": "15000.00",
+  "duration": "300",
+  "course_year": "2026"
+},
+{
+  "_id": {
+    "$oid": "6a9fa11f26fcd39cc77e53a7"
+  },
+  "courseid": "CID/DHN/02/001",
+  "coursename": "Hardware and Network Diploma",
+  "course_type": "02",
+  "course_abbr": "DHN",
+  "price": "14000.00",
+  "duration": "300",
+  "course_year": "2026"
+},
+{
+  "_id": {
+    "$oid": "6a9fa11f26fcd39cc77e53a8"
+  },
+  "courseid": "CID/DSC/01/001",
+  "coursename": "Data Science",
+  "course_type": "01",
+  "course_abbr": "DSC",
+  "price": "12000.00",
+  "duration": "120",
+  "course_year": "2026"
+},
+{
+  "_id": {
+    "$oid": "6a9fa11f26fcd39cc77e53a9"
+  },
+  "courseid": "CID/MCA/04/001",
+  "coursename": "MCA",
+  "course_type": "04",
+  "course_abbr": "MCA",
+  "price": "55000.00",
+  "duration": "600",
+  "course_year": "2026"
+},
+{
+  "_id": {
+    "$oid": "6a9fa11f26fcd39cc77e53aa"
+  },
+  "courseid": "CID/MSCDS/04/001",
+  "coursename": "MSc_DSc",
+  "course_type": "04",
+  "course_abbr": "MSCDS",
+  "price": "60000.00",
+  "duration": "600",
+  "course_year": "2026"
+}]

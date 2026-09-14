@@ -1,0 +1,152 @@
+[{
+  "_id": {
+    "$oid": "6aa420de30fa5563928dbb8d"
+  },
+  "id": "student_seq",
+  "__v": 0,
+  "seq": 16
+},
+{
+  "_id": {
+    "$oid": "6aa4212430fa5563928dbb8e"
+  },
+  "id": "batch_CID/CCOA/01/001",
+  "__v": 0,
+  "seq": 1
+},
+{
+  "_id": {
+    "$oid": "6aa4216730fa5563928dbb8f"
+  },
+  "id": "exam_CCOA/09202601",
+  "__v": 0,
+  "seq": 1
+},
+{
+  "_id": {
+    "$oid": "6aa4217330fa5563928dbb90"
+  },
+  "id": "result_EX-CCOA/09202601",
+  "__v": 0,
+  "seq": 1
+},
+{
+  "_id": {
+    "$oid": "6aa4218a30fa5563928dbb91"
+  },
+  "id": "crt_CCOA/09202601_SID-001",
+  "__v": 0,
+  "seq": 1
+},
+{
+  "_id": {
+    "$oid": "6aa5091730fa5563928dbb92"
+  },
+  "id": "batch_CCWD_01_012026",
+  "__v": 0,
+  "seq": 1
+},
+{
+  "_id": {
+    "$oid": "6aa50a7530fa5563928dbb93"
+  },
+  "id": "exam_CID/CCWD/01/012026/001",
+  "__v": 0,
+  "seq": 1
+},
+{
+  "_id": {
+    "$oid": "6aa50aa630fa5563928dbb94"
+  },
+  "id": "result_EX-CID/CCWD/01/012026/001",
+  "__v": 0,
+  "seq": 5
+},
+{
+  "_id": {
+    "$oid": "6aa50ad530fa5563928dbb95"
+  },
+  "id": "crt_CID/CCWD/01/012026/001_SID-002",
+  "__v": 0,
+  "seq": 1
+},
+{
+  "_id": {
+    "$oid": "6aa50b0f30fa5563928dbb96"
+  },
+  "id": "crt_CID/CCWD/01/012026/001_SID-003",
+  "__v": 0,
+  "seq": 1
+},
+{
+  "_id": {
+    "$oid": "6aa50b1630fa5563928dbb97"
+  },
+  "id": "crt_CID/CCWD/01/012026/001_SID-004",
+  "__v": 0,
+  "seq": 1
+},
+{
+  "_id": {
+    "$oid": "6aa50b1d30fa5563928dbb98"
+  },
+  "id": "crt_CID/CCWD/01/012026/001_SID-005",
+  "__v": 0,
+  "seq": 1
+},
+{
+  "_id": {
+    "$oid": "6aa50b2430fa5563928dbb99"
+  },
+  "id": "crt_CID/CCWD/01/012026/001_SID-006",
+  "__v": 0,
+  "seq": 1
+},
+{
+  "_id": {
+    "$oid": "6aa50f4030fa5563928dbb9c"
+  },
+  "id": "result_seq_CID/CCWD/01/012026/001_SID-002",
+  "__v": 0,
+  "seq": 1
+},
+{
+  "_id": {
+    "$oid": "6aa50f4030fa5563928dbb9d"
+  },
+  "id": "result_seq_CID/CCWD/01/012026/001_SID-003",
+  "__v": 0,
+  "seq": 1
+},
+{
+  "_id": {
+    "$oid": "6aa50f4030fa5563928dbb9f"
+  },
+  "id": "result_seq_CID/CCWD/01/012026/001_SID-004",
+  "__v": 0,
+  "seq": 1
+},
+{
+  "_id": {
+    "$oid": "6aa50f4030fa5563928dbba1"
+  },
+  "id": "result_seq_CID/CCWD/01/012026/001_SID-005",
+  "__v": 0,
+  "seq": 1
+},
+{
+  "_id": {
+    "$oid": "6aa50f4030fa5563928dbba3"
+  },
+  "id": "result_seq_CID/CCWD/01/012026/001_SID-006",
+  "__v": 0,
+  "seq": 1
+},
+{
+  "_id": {
+    "$oid": "6aa51ee030fa5563928dbba5"
+  },
+  "id": "batch_CID/BCA/03/001",
+  "__v": 0,
+  "seq": 1
+}]

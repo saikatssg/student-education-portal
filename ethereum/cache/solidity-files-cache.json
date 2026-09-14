@@ -1,0 +1,40 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "G:\\mongoDB\\student-education-portal\\ethereum\\contracts\\StudentCertificatePortal.sol": {
+      "lastModificationDate": 1789018097922,
+      "contentHash": "4b7b3d477e746fa13005af63c71077e1",
+      "sourceName": "contracts/StudentCertificatePortal.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.19"
+      ],
+      "artifacts": [
+        "StudentCertificatePortal"
+      ]
+    }
+  }
+}

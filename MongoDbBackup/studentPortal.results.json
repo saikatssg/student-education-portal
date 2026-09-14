@@ -1,0 +1,313 @@
+[{
+  "_id": {
+    "$oid": "6aa421739ff84875ad449385"
+  },
+  "rsultid": "RSID/EX-CCOA/09202601/001",
+  "examid": "EX-CCOA/09202601",
+  "sid": "SID-001",
+  "semester": 1,
+  "marks": [
+    {
+      "subject": "Theory",
+      "score": 75,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6aa421739ff84875ad449386"
+      }
+    },
+    {
+      "subject": "Practical",
+      "score": 78,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6aa421739ff84875ad449387"
+      }
+    }
+  ],
+  "total_score": 153,
+  "grade": "B",
+  "created_at": {
+    "$date": "2026-09-11T15:42:43.940Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6aa50aa69ff84875ad44938a"
+  },
+  "rsultid": "RSID/EX-CID/CCWD/01/012026/001/001",
+  "examid": "EX-CID/CCWD/01/012026/001",
+  "sid": "SID-002",
+  "semester": 1,
+  "marks": [
+    {
+      "subject": "Theory",
+      "score": 68,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6aa50aa69ff84875ad44938b"
+      }
+    },
+    {
+      "subject": "Practical",
+      "score": 67,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6aa50aa69ff84875ad44938c"
+      }
+    }
+  ],
+  "total_score": 135,
+  "grade": "C",
+  "created_at": {
+    "$date": "2026-09-12T08:17:42.388Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6aa50aa79ff84875ad44938d"
+  },
+  "rsultid": "RSID/EX-CID/CCWD/01/012026/001/002",
+  "examid": "EX-CID/CCWD/01/012026/001",
+  "sid": "SID-003",
+  "semester": 1,
+  "marks": [
+    {
+      "subject": "Theory",
+      "score": 72,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6aa50aa79ff84875ad44938e"
+      }
+    },
+    {
+      "subject": "Practical",
+      "score": 74,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6aa50aa79ff84875ad44938f"
+      }
+    }
+  ],
+  "total_score": 146,
+  "grade": "B",
+  "created_at": {
+    "$date": "2026-09-12T08:17:43.321Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6aa50aa79ff84875ad449390"
+  },
+  "rsultid": "RSID/EX-CID/CCWD/01/012026/001/003",
+  "examid": "EX-CID/CCWD/01/012026/001",
+  "sid": "SID-004",
+  "semester": 1,
+  "marks": [
+    {
+      "subject": "Theory",
+      "score": 85,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6aa50aa79ff84875ad449391"
+      }
+    },
+    {
+      "subject": "Practical",
+      "score": 82,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6aa50aa79ff84875ad449392"
+      }
+    }
+  ],
+  "total_score": 167,
+  "grade": "A",
+  "created_at": {
+    "$date": "2026-09-12T08:17:43.961Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6aa50aa89ff84875ad449393"
+  },
+  "rsultid": "RSID/EX-CID/CCWD/01/012026/001/004",
+  "examid": "EX-CID/CCWD/01/012026/001",
+  "sid": "SID-005",
+  "semester": 1,
+  "marks": [
+    {
+      "subject": "Theory",
+      "score": 72,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6aa50aa89ff84875ad449394"
+      }
+    },
+    {
+      "subject": "Practical",
+      "score": 78,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6aa50aa89ff84875ad449395"
+      }
+    }
+  ],
+  "total_score": 150,
+  "grade": "B",
+  "created_at": {
+    "$date": "2026-09-12T08:17:44.481Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6aa50aa99ff84875ad449396"
+  },
+  "rsultid": "RSID/EX-CID/CCWD/01/012026/001/005",
+  "examid": "EX-CID/CCWD/01/012026/001",
+  "sid": "SID-006",
+  "semester": 1,
+  "marks": [
+    {
+      "subject": "Theory",
+      "score": 90,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6aa50aa99ff84875ad449397"
+      }
+    },
+    {
+      "subject": "Practical",
+      "score": 85,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6aa50aa99ff84875ad449398"
+      }
+    }
+  ],
+  "total_score": 175,
+  "grade": "A",
+  "created_at": {
+    "$date": "2026-09-12T08:17:45.184Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6aa50f2330fa5563928dbb9a"
+  },
+  "semester": "1",
+  "examid": "EXID/CID/CCWD/01/012026/001/001",
+  "sid": "SID-002",
+  "__v": 0,
+  "batchcode": "CID/CCWD/01/012026/001",
+  "created_at": {
+    "$date": "2026-09-12T08:37:20.671Z"
+  },
+  "grade": "A",
+  "marks": [
+    {
+      "subject": "Web Design Basics",
+      "score": 85,
+      "max_score": 100
+    }
+  ],
+  "total_score": 85,
+  "rsultid": "RES/CID/CCWD/01/012026/001/SID-002/001"
+},
+{
+  "_id": {
+    "$oid": "6aa50f4030fa5563928dbb9e"
+  },
+  "sid": "SID-003",
+  "examid": "EXID/CID/CCWD/01/012026/001/001",
+  "semester": "1",
+  "__v": 0,
+  "batchcode": "CID/CCWD/01/012026/001",
+  "created_at": {
+    "$date": "2026-09-12T08:37:20.674Z"
+  },
+  "grade": "A",
+  "marks": [
+    {
+      "subject": "Web Design Basics",
+      "score": 85,
+      "max_score": 100
+    }
+  ],
+  "rsultid": "RES/CID/CCWD/01/012026/001/SID-003/001",
+  "total_score": 85
+},
+{
+  "_id": {
+    "$oid": "6aa50f4030fa5563928dbba0"
+  },
+  "sid": "SID-004",
+  "examid": "EXID/CID/CCWD/01/012026/001/001",
+  "semester": "1",
+  "__v": 0,
+  "batchcode": "CID/CCWD/01/012026/001",
+  "created_at": {
+    "$date": "2026-09-12T08:37:20.677Z"
+  },
+  "grade": "A",
+  "marks": [
+    {
+      "subject": "Web Design Basics",
+      "score": 85,
+      "max_score": 100
+    }
+  ],
+  "rsultid": "RES/CID/CCWD/01/012026/001/SID-004/001",
+  "total_score": 85
+},
+{
+  "_id": {
+    "$oid": "6aa50f4030fa5563928dbba2"
+  },
+  "sid": "SID-005",
+  "examid": "EXID/CID/CCWD/01/012026/001/001",
+  "semester": "1",
+  "__v": 0,
+  "batchcode": "CID/CCWD/01/012026/001",
+  "created_at": {
+    "$date": "2026-09-12T08:37:20.679Z"
+  },
+  "grade": "A",
+  "marks": [
+    {
+      "subject": "Web Design Basics",
+      "score": 85,
+      "max_score": 100
+    }
+  ],
+  "rsultid": "RES/CID/CCWD/01/012026/001/SID-005/001",
+  "total_score": 85
+},
+{
+  "_id": {
+    "$oid": "6aa50f4030fa5563928dbba4"
+  },
+  "sid": "SID-006",
+  "examid": "EXID/CID/CCWD/01/012026/001/001",
+  "semester": "1",
+  "__v": 0,
+  "batchcode": "CID/CCWD/01/012026/001",
+  "created_at": {
+    "$date": "2026-09-12T08:37:20.681Z"
+  },
+  "grade": "A",
+  "marks": [
+    {
+      "subject": "Web Design Basics",
+      "score": 85,
+      "max_score": 100
+    }
+  ],
+  "rsultid": "RES/CID/CCWD/01/012026/001/SID-006/001",
+  "total_score": 85
+}]

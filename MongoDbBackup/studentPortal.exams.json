@@ -1,0 +1,35 @@
+[{
+  "_id": {
+    "$oid": "6aa421679ff84875ad449384"
+  },
+  "examid": "EXID/CCOA/09202601/001",
+  "batchcode": "CCOA/09202601",
+  "exam_date": {
+    "$date": "2027-02-12T00:00:00.000Z"
+  },
+  "candidates": [
+    "SID-001"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6aa50a759ff84875ad449389"
+  },
+  "examid": "EXID/CID/CCWD/01/012026/001/001",
+  "batchcode": "CID/CCWD/01/012026/001",
+  "exam_date": {
+    "$date": "2026-05-15T00:00:00.000Z"
+  },
+  "candidates": [
+    "SID-002",
+    "SID-003",
+    "SID-004",
+    "SID-005",
+    "SID-006"
+  ],
+  "__v": 0,
+  "created_at": {
+    "$date": "2026-09-12T08:37:20.653Z"
+  }
+}]

@@ -1,0 +1,104 @@
+:root {
+  --primary-color: #f5ab35; /* Golden Amber */
+  --primary-hover: #e0992a;
+  --secondary-color: #3498db; /* Slate Blue */
+  --secondary-hover: #2980b9;
+  --dark-bg: #222222;
+  --light-bg: #f5f7fa;
+  --text-dark: #333333;
+  --text-muted: #777777;
+  --white: #ffffff;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--light-bg);
+  color: var(--text-dark);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+/* Custom Overrides for Bootstrap Buttons */
+.btn-primary {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: var(--white) !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover) !important;
+  border-color: var(--primary-hover) !important;
+}
+
+.btn-outline-primary {
+  color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color) !important;
+  color: var(--white) !important;
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color) !important;
+  border-color: var(--secondary-color) !important;
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary-hover) !important;
+  border-color: var(--secondary-hover) !important;
+}
+
+/* Navbar overrides */
+.navbar-custom {
+  background-color: var(--white) !important;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.navbar-custom .nav-link {
+  color: var(--text-dark) !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  padding: 1rem 1.5rem !important;
+  transition: all 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+  color: var(--primary-color) !important;
+}
+
+/* Utilities */
+.text-primary-custom {
+  color: var(--primary-color) !important;
+}
+
+.text-secondary-custom {
+  color: var(--secondary-color) !important;
+}
+
+.bg-dark-custom {
+  background-color: var(--dark-bg) !important;
+}
+
+.top-bar {
+  background-color: var(--dark-bg);
+  color: var(--white);
+  font-size: 0.85rem;
+  padding: 0.5rem 0;
+}
+
+/* Card Enhancements */
+.card-hover-shadow {
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.card-hover-shadow:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+  transform: translateY(-5px);
+}
