@@ -402,4 +402,79 @@
   "__v": 0,
   "batchcode": "CID/BCA/03/092025/001",
   "crtid": null
+},
+{
+  "_id": {
+    "$oid": "6aa7ce5a9e942c87b7404ba3"
+  },
+  "sid": "SID-017",
+  "fname": "Soumen",
+  "lname": "Halder",
+  "username": "soumen",
+  "password": "Soumen@123",
+  "email": "soumen@gmail.com",
+  "phone": "6547893214",
+  "city": "Kolkata",
+  "dob": {
+    "$date": "2005-04-22T00:00:00.000Z"
+  },
+  "photo": "1789382234800.jpg",
+  "role": "candidate",
+  "prevCode": [],
+  "created_at": {
+    "$date": "2026-09-14T10:37:14.807Z"
+  },
+  "__v": 0,
+  "batchcode": "CID/DSC/01/092026/001",
+  "crtid": "CRT/CID/DSC/01/092026/001/SID-017/001"
+},
+{
+  "_id": {
+    "$oid": "6aa7eafb9e942c87b7404ba9"
+  },
+  "sid": "SID-018",
+  "fname": "Debolina",
+  "lname": "Singha Roy",
+  "username": "debolina",
+  "password": "Debolina@123",
+  "email": "debolina@gmail.com",
+  "phone": "6547893214",
+  "city": "KOLKATA",
+  "dob": {
+    "$date": "2004-02-15T00:00:00.000Z"
+  },
+  "photo": "1789389563234.jpg",
+  "role": "candidate",
+  "prevCode": [],
+  "created_at": {
+    "$date": "2026-09-14T12:39:23.241Z"
+  },
+  "__v": 0,
+  "batchcode": "CID/DSC/01/092026/001",
+  "crtid": "CRT/CID/DSC/01/092026/001/SID-018/001"
+},
+{
+  "_id": {
+    "$oid": "6aaa389c7ec70f69acaa33e2"
+  },
+  "sid": "SID-019",
+  "fname": "Suresh",
+  "lname": "Mondal",
+  "username": "suresh",
+  "password": "Suresh@123",
+  "email": "suresh@gmail.com",
+  "phone": "6547893214",
+  "city": "Kolkata",
+  "dob": {
+    "$date": "2003-09-16T00:00:00.000Z"
+  },
+  "photo": "1789540508182.jpg",
+  "role": "candidate",
+  "prevCode": [],
+  "created_at": {
+    "$date": "2026-09-16T06:35:08.190Z"
+  },
+  "__v": 0,
+  "batchcode": "CCOA/09202601",
+  "crtid": "CRT/CCOA/09202601/SID-019/001"
 }]

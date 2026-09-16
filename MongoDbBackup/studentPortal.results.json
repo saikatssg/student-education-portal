@@ -310,4 +310,217 @@
   ],
   "rsultid": "RES/CID/CCWD/01/012026/001/SID-006/001",
   "total_score": 85
+},
+{
+  "_id": {
+    "$oid": "6aa7cd689e942c87b7404b9c"
+  },
+  "rsultid": "RSID/EX-CID/BCA/03/092025/001/001",
+  "examid": "EX-CID/BCA/03/092025/001",
+  "sid": "SID-007",
+  "semester": 1,
+  "marks": [
+    {
+      "subject": "Subject 1",
+      "score": 67,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6aa7cd689e942c87b7404b9d"
+      }
+    },
+    {
+      "subject": "Subject 2",
+      "score": 75,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6aa7cd689e942c87b7404b9e"
+      }
+    },
+    {
+      "subject": "Subject 3",
+      "score": 84,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6aa7cd689e942c87b7404b9f"
+      }
+    },
+    {
+      "subject": "Subject 4",
+      "score": 77,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6aa7cd689e942c87b7404ba0"
+      }
+    },
+    {
+      "subject": "Subject 5",
+      "score": 85,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6aa7cd689e942c87b7404ba1"
+      }
+    }
+  ],
+  "total_score": 388,
+  "grade": "B",
+  "created_at": {
+    "$date": "2026-09-14T10:33:12.005Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6aa7cf479e942c87b7404ba5"
+  },
+  "rsultid": "RSID/EX-CID/DSC/01/092026/001/001",
+  "examid": "EX-CID/DSC/01/092026/001",
+  "sid": "SID-017",
+  "semester": 1,
+  "marks": [
+    {
+      "subject": "Theory",
+      "score": 78,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6aa7cf479e942c87b7404ba6"
+      }
+    },
+    {
+      "subject": "Practical",
+      "score": 85,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6aa7cf479e942c87b7404ba7"
+      }
+    }
+  ],
+  "total_score": 163,
+  "grade": "A",
+  "created_at": {
+    "$date": "2026-09-14T10:41:11.333Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6aa7eb279e942c87b7404baa"
+  },
+  "rsultid": "RSID/EX-CID/DSC/01/092026/001/002",
+  "examid": "EX-CID/DSC/01/092026/001",
+  "sid": "SID-018",
+  "semester": 1,
+  "marks": [
+    {
+      "subject": "Theory",
+      "score": 87,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6aa7eb279e942c87b7404bab"
+      }
+    },
+    {
+      "subject": "Practical",
+      "score": 92,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6aa7eb279e942c87b7404bac"
+      }
+    }
+  ],
+  "total_score": 179,
+  "grade": "A",
+  "created_at": {
+    "$date": "2026-09-14T12:40:07.530Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6aa93a1074a697847cd90610"
+  },
+  "rsultid": "RSID/EX-CID/BCA/03/092025/001/002",
+  "examid": "EX-CID/BCA/03/092025/001",
+  "sid": "SID-008",
+  "semester": 1,
+  "marks": [
+    {
+      "subject": "Subject 1",
+      "score": 67,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6aa93bc074a697847cd9061b"
+      }
+    },
+    {
+      "subject": "Subject 2",
+      "score": 74,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6aa93bc074a697847cd9061c"
+      }
+    },
+    {
+      "subject": "Subject 3",
+      "score": 68,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6aa93bc074a697847cd9061d"
+      }
+    },
+    {
+      "subject": "Subject 4",
+      "score": 24,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6aa93bc074a697847cd9061e"
+      }
+    },
+    {
+      "subject": "Subject 5",
+      "score": 77,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6aa93bc074a697847cd9061f"
+      }
+    }
+  ],
+  "total_score": 310,
+  "grade": "C",
+  "created_at": {
+    "$date": "2026-09-15T12:29:04.704Z"
+  },
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "6aaa397c7ec70f69acaa33e4"
+  },
+  "rsultid": "RSID/EX-CCOA/09202601/002",
+  "examid": "EX-CCOA/09202601",
+  "sid": "SID-019",
+  "semester": 1,
+  "marks": [
+    {
+      "subject": "Theory",
+      "score": 64,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6aaa397c7ec70f69acaa33e5"
+      }
+    },
+    {
+      "subject": "Practical",
+      "score": 72,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6aaa397c7ec70f69acaa33e6"
+      }
+    }
+  ],
+  "total_score": 136,
+  "grade": "C",
+  "created_at": {
+    "$date": "2026-09-16T06:38:52.124Z"
+  },
+  "__v": 0
 }]

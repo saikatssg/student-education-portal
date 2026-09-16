@@ -69,6 +69,7 @@ const examSchema = new mongoose.Schema({
     examid: { type: String, required: true, unique: true }, // e.g. EXID/ACAD/0109202601/001
     batchcode: { type: String, ref: 'Batch', required: true },
     exam_date: { type: Date, required: true },
+    semester: { type: Number },
     candidates: [{ type: String, ref: 'Student' }] // SIDs of candidates sitting for exam
 });
 const Exam = mongoose.model('Exam', examSchema);
@@ -87,7 +88,14 @@ const resultSchema = new mongoose.Schema({
         max_score: { type: Number, required: true, default: 100 }
     }],
     total_score: { type: Number, required: true },
-    grade: { type: String, required: true }
+    grade: { type: String, required: true },
+
+    // Blockchain Specific Fields
+    previous_hash: { type: String },
+    current_hash: { type: String },
+    transaction_details: { type: String },
+    transaction_hash: { type: String },
+    contract_address: { type: String }
 }, { timestamps: { createdAt: 'created_at', updatedAt: false } });
 const Result = mongoose.model('Result', resultSchema);
 
@@ -111,6 +119,7 @@ const certificateSchema = new mongoose.Schema({
     current_hash: { type: String, required: true },
     transaction_details: { type: String, required: true },
     contract_address: { type: String, required: true },
+    transaction_hash: { type: String, required: false }
 }, { timestamps: { createdAt: 'crt_generate_on', updatedAt: 'crt_update_on' } });
 const Certificate = mongoose.model('Certificate', certificateSchema);
 
@@ -126,4 +135,30 @@ const adminSchema = new mongoose.Schema({
 });
 const Admin = mongoose.model('Admin', adminSchema);
 
-module.exports = { Counter, Course, Batch, Student, Exam, Result, Certificate, Admin };
+// ==========================================
+// 8. ID Card Schema (Blockchain)
+// ==========================================
+const idCardSchema = new mongoose.Schema({
+    idCardId: { type: String, required: true, unique: true },
+    sid: { type: String, ref: 'Student', required: true },
+    fullname: { type: String, required: true },
+    courseName: { type: String, required: true },
+    batchcode: { type: String, required: true },
+    phone: { type: String, required: true },
+    email: { type: String, required: true },
+    photoUrl: { type: String },
+
+    // Status
+    status: { type: String, enum: ['Pending', 'Minted'], default: 'Pending' },
+    validUntil: { type: Date },
+
+    // Blockchain Specific Fields
+    previous_hash: { type: String },
+    current_hash: { type: String },
+    transaction_details: { type: String },
+    transaction_hash: { type: String },
+    contract_address: { type: String }
+}, { timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' } });
+const IdCard = mongoose.model('IdCard', idCardSchema);
+
+module.exports = { Counter, Course, Batch, Student, Exam, Result, Certificate, Admin, IdCard };

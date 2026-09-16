@@ -9,6 +9,7 @@ import AdminDashboard from './components/AdminDashboard';
 import CandidateDashboard from './components/CandidateDashboard';
 import About from './components/About';
 import Contact from './components/Contact';
+import IdVerification from './components/IdVerification';
 
 const LogoutButton = () => {
   const navigate = useNavigate();
@@ -101,6 +102,7 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/verify/*" element={<CertificateVerification />} />
+            <Route path="/verify-id/:id" element={<IdVerification />} />
             <Route path="/admin" element={<AdminDashboard />} />
             <Route path="/candidate" element={<CandidateDashboard />} />
           </Routes>

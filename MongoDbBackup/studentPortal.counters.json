@@ -4,7 +4,7 @@
   },
   "id": "student_seq",
   "__v": 0,
-  "seq": 16
+  "seq": 19
 },
 {
   "_id": {
@@ -28,7 +28,7 @@
   },
   "id": "result_EX-CCOA/09202601",
   "__v": 0,
-  "seq": 1
+  "seq": 2
 },
 {
   "_id": {
@@ -147,6 +147,70 @@
     "$oid": "6aa51ee030fa5563928dbba5"
   },
   "id": "batch_CID/BCA/03/001",
+  "__v": 0,
+  "seq": 1
+},
+{
+  "_id": {
+    "$oid": "6aa7ccc230fa5563928dbba6"
+  },
+  "id": "batch_CSD_02_092026",
+  "__v": 0,
+  "seq": 1
+},
+{
+  "_id": {
+    "$oid": "6aa7cd6730fa5563928dbba7"
+  },
+  "id": "result_EX-CID/BCA/03/092025/001",
+  "__v": 0,
+  "seq": 2
+},
+{
+  "_id": {
+    "$oid": "6aa7cdce30fa5563928dbba8"
+  },
+  "id": "batch_DSC_01_092026",
+  "__v": 0,
+  "seq": 1
+},
+{
+  "_id": {
+    "$oid": "6aa7ceba30fa5563928dbba9"
+  },
+  "id": "exam_CID/DSC/01/092026/001",
+  "__v": 0,
+  "seq": 1
+},
+{
+  "_id": {
+    "$oid": "6aa7cf4730fa5563928dbbaa"
+  },
+  "id": "result_EX-CID/DSC/01/092026/001",
+  "__v": 0,
+  "seq": 2
+},
+{
+  "_id": {
+    "$oid": "6aa7cfe230fa5563928dbbab"
+  },
+  "id": "crt_CID/DSC/01/092026/001_SID-017",
+  "__v": 0,
+  "seq": 1
+},
+{
+  "_id": {
+    "$oid": "6aa7eb3f30fa5563928dbbac"
+  },
+  "id": "crt_CID/DSC/01/092026/001_SID-018",
+  "__v": 0,
+  "seq": 1
+},
+{
+  "_id": {
+    "$oid": "6aaa399832deb9215ca1f3dc"
+  },
+  "id": "crt_CCOA/09202601_SID-019",
   "__v": 0,
   "seq": 1
 }]

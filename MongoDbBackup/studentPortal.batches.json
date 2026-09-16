@@ -54,4 +54,42 @@
     "$date": "2025-09-12T09:44:00.111Z"
   },
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6aa7ccc29e942c87b7404b9b"
+  },
+  "batchcode": "CID/CSD/02/092026/001",
+  "courseid": "CID/CSD/02/001",
+  "start_date": {
+    "$date": "2025-01-14T00:00:00.000Z"
+  },
+  "end_date": {
+    "$date": "2026-01-14T00:00:00.000Z"
+  },
+  "year": "2026",
+  "status": "Active",
+  "created_at": {
+    "$date": "2026-09-14T10:30:26.906Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6aa7cdce9e942c87b7404ba2"
+  },
+  "batchcode": "CID/DSC/01/092026/001",
+  "courseid": "CID/DSC/01/001",
+  "start_date": {
+    "$date": "2026-01-14T00:00:00.000Z"
+  },
+  "end_date": {
+    "$date": "2026-08-14T00:00:00.000Z"
+  },
+  "year": "2026",
+  "status": "Active",
+  "created_at": {
+    "$date": "2026-09-14T10:34:54.230Z"
+  },
+  "__v": 0
 }]

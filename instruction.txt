@@ -1,0 +1,44 @@
+
+1> Ethereum dir 
+
+Go to Ethereum to connect ganache 
+
+PS G:\mongoDB\student-education-portal> cd .\ethereum\
+PS G:\mongoDB\student-education-portal\ethereum> npx hardhat node
+
+open another terminal  for Ethereum dir 
+
+
+PS G:\mongoDB\student-education-portal> cd .\ethereum\
+PS G:\mongoDB\student-education-portal\ethereum> npx hardhat run scripts/deployCertificate.js --network localhost
+
+2> backend dir 
+
+PS G:\mongoDB\student-education-portal> cd .\backend\
+PS G:\mongoDB\student-education-portal\backend> npm start
+
+
+3> FrontEnd 
+
+PS G:\mongoDB\student-education-portal> cd .\frontend\
+PS G:\mongoDB\student-education-portal\frontend> npm run dev
+
+> frontend@0.0.0 dev
+> vite
+
+
+  VITE v8.2.2  ready in 223 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+
+
+GitHub link 
+
+https://github.com/saikatssg/student-education-portal/tree/main
+
+
+
+
+

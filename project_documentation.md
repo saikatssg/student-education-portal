@@ -192,3 +192,81 @@ flowchart TD
 - **Authentication & Authorization**: Role-based access control (Admin vs. Candidate) implemented using secure JWT (JSON Web Tokens) or session management.
 - **Data Privacy**: Sensitive personal details (PII) are stored securely in MongoDB. Only the non-reversible cryptographic hash and public identifiers are exposed on the public blockchain, ensuring GDPR compliance.
 - **Input Validation**: Strict Mongoose schemas and backend validation middleware enforce data types and constraints to prevent NoSQL injection and malformed data entry.
+
+## 13. Dependencies and Installation Instructions
+
+This section outlines the dependencies for each part of the project and provides step-by-step instructions on how to install them.
+
+### Prerequisites
+Before installing the dependencies, ensure you have the following installed on your system:
+- [Node.js](https://nodejs.org/) (v16.x or higher recommended)
+- [npm](https://www.npmjs.com/) (Node Package Manager)
+
+### Step 1: Backend Dependencies
+Navigate to the `backend` directory and install the necessary packages.
+
+```bash
+cd backend
+npm install
+```
+
+**Dependencies:**
+- `cors` (^2.8.6): Middleware to enable Cross-Origin Resource Sharing.
+- `ethers` (^6.17.0): Library for interacting with the Ethereum Blockchain.
+- `express` (^5.2.1): Fast, unopinionated, minimalist web framework for Node.js.
+- `mongoose` (^9.9.5): MongoDB object modeling tool designed to work in an asynchronous environment.
+- `multer` (^2.3.0): Node.js middleware for handling `multipart/form-data`, primarily used for uploading files.
+
+### Step 2: Frontend Dependencies
+Navigate to the `frontend` directory and install the necessary packages.
+
+```bash
+cd frontend
+npm install
+```
+
+**Dependencies:**
+- `bootstrap` (^5.3.8): CSS framework for responsive design.
+- `ethers` (^6.17.0): Library for interacting with the Ethereum Blockchain.
+- `html2canvas` (^1.4.1): Takes "screenshots" of webpages or parts of it to build the certificate visually.
+- `jspdf` (^4.2.1): Library to generate PDFs (used for downloading certificates).
+- `qrcode.react` (^4.2.0): React component to generate QR codes for certificate verification.
+- `react` & `react-dom` (^19.2.8): Core React libraries for building the UI.
+- `react-router-dom` (^7.18.3): Declarative routing for React web applications.
+
+**Dev Dependencies:**
+- Tools and plugins related to Vite, ESLint, and TypeScript declarations (`@eslint/js`, `@vitejs/plugin-react`, `vite`, etc.) for an optimized development experience.
+
+### Step 3: Ethereum (Blockchain) Dependencies
+Navigate to the `ethereum` directory and install the necessary packages.
+
+```bash
+cd ethereum
+npm install
+```
+
+**Dev Dependencies:**
+- `@nomicfoundation/hardhat-toolbox` (^6.1.2): Bundles all the commonly used Hardhat plugins.
+- `hardhat` (^2.29.0): Ethereum development environment for compiling, testing, and deploying smart contracts locally.
+
+**Dependencies:**
+- Various low-level tools and utilities required by the Ethereum ecosystem (`adm-zip`, `ethereum-cryptography`, `micro-eth-signer`, `tsx`, `zod`, etc.).
+
+### Running the Application Locally
+After installing all dependencies, you can start the application using the following commands in three separate terminal windows:
+
+1. **Start the local Hardhat Node (Ethereum):**
+   ```bash
+   cd ethereum
+   npx hardhat node
+   ```
+2. **Start the Backend Server:**
+   ```bash
+   cd backend
+   npm start
+   ```
+3. **Start the Frontend Application:**
+   ```bash
+   cd frontend
+   npm run dev
+   ```

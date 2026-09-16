@@ -6,7 +6,7 @@ const { ethers } = require('ethers');
 const fs = require('fs');
 const path = require('path');
 const multer = require('multer');
-const { Counter, Course, Batch, Student, Exam, Result, Certificate, Admin } = require('./models');
+const { Counter, Course, Batch, Student, Exam, Result, Certificate, Admin, IdCard } = require('./models');
 
 const app = express();
 // Configure Multer for File Uploads
@@ -35,8 +35,8 @@ const provider = new ethers.JsonRpcProvider('http://127.0.0.1:7545');
 const adminPrivateKey = '0x0000000000000000000000000000000000000000000000000000000000000001';
 const wallet = new ethers.Wallet(adminPrivateKey, provider);
 
-const contractAddress = '0x9a177C4a7383843cB91E8147F903B388bf0B3767';
-const contractABI = [{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"string","name":"certificateId","type":"string"},{"indexed":false,"internalType":"string","name":"currentHash","type":"string"},{"indexed":false,"internalType":"uint256","name":"timestamp","type":"uint256"}],"name":"CertificateMinted","type":"event"},{"inputs":[{"internalType":"string","name":"","type":"string"}],"name":"certificates","outputs":[{"internalType":"string","name":"previousHash","type":"string"},{"internalType":"string","name":"currentHash","type":"string"},{"internalType":"string","name":"transactionDetails","type":"string"},{"internalType":"string","name":"studentId","type":"string"},{"internalType":"string","name":"name","type":"string"},{"internalType":"string","name":"certificateId","type":"string"},{"internalType":"string","name":"marksScore","type":"string"},{"internalType":"string","name":"grade","type":"string"},{"internalType":"string","name":"courseName","type":"string"},{"internalType":"string","name":"phone","type":"string"},{"internalType":"string","name":"email","type":"string"},{"internalType":"uint256","name":"timestamp","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"lastBlockHash","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"string","name":"_transactionDetails","type":"string"},{"internalType":"string","name":"_studentId","type":"string"},{"internalType":"string","name":"_name","type":"string"},{"internalType":"string","name":"_certificateId","type":"string"},{"internalType":"string","name":"_marksScore","type":"string"},{"internalType":"string","name":"_grade","type":"string"},{"internalType":"string","name":"_courseName","type":"string"},{"internalType":"string","name":"_phone","type":"string"},{"internalType":"string","name":"_email","type":"string"}],"name":"mintCertificate","outputs":[],"stateMutability":"nonpayable","type":"function"}];
+const contractAddress = '0x5FbDB2315678afecb367f032d93F642f64180aa3';
+const contractABI = [{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"string","name":"certificateId","type":"string"},{"indexed":false,"internalType":"string","name":"currentHash","type":"string"},{"indexed":false,"internalType":"uint256","name":"timestamp","type":"uint256"}],"name":"CertificateMinted","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"string","name":"idCardId","type":"string"},{"indexed":false,"internalType":"string","name":"currentHash","type":"string"},{"indexed":false,"internalType":"uint256","name":"timestamp","type":"uint256"}],"name":"IdCardMinted","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"string","name":"resultId","type":"string"},{"indexed":false,"internalType":"string","name":"currentHash","type":"string"},{"indexed":false,"internalType":"uint256","name":"timestamp","type":"uint256"}],"name":"ResultMinted","type":"event"},{"inputs":[{"internalType":"string","name":"","type":"string"}],"name":"certificates","outputs":[{"internalType":"string","name":"previousHash","type":"string"},{"internalType":"string","name":"currentHash","type":"string"},{"internalType":"string","name":"transactionDetails","type":"string"},{"internalType":"string","name":"studentId","type":"string"},{"internalType":"string","name":"name","type":"string"},{"internalType":"string","name":"certificateId","type":"string"},{"internalType":"string","name":"marksScore","type":"string"},{"internalType":"string","name":"grade","type":"string"},{"internalType":"string","name":"courseName","type":"string"},{"internalType":"string","name":"phone","type":"string"},{"internalType":"string","name":"email","type":"string"},{"internalType":"uint256","name":"timestamp","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"string","name":"","type":"string"}],"name":"idCards","outputs":[{"internalType":"string","name":"previousHash","type":"string"},{"internalType":"string","name":"currentHash","type":"string"},{"internalType":"string","name":"transactionDetails","type":"string"},{"internalType":"string","name":"studentId","type":"string"},{"internalType":"string","name":"name","type":"string"},{"internalType":"string","name":"courseName","type":"string"},{"internalType":"string","name":"batchCode","type":"string"},{"internalType":"string","name":"phone","type":"string"},{"internalType":"string","name":"email","type":"string"},{"internalType":"string","name":"photoUrl","type":"string"},{"internalType":"uint256","name":"timestamp","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"lastBlockHash","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"string","name":"_transactionDetails","type":"string"},{"internalType":"string","name":"_certificateId","type":"string"},{"internalType":"string","name":"_studentId","type":"string"},{"internalType":"string","name":"_name","type":"string"},{"internalType":"string","name":"_courseName","type":"string"},{"internalType":"string","name":"_batchCode","type":"string"},{"internalType":"string","name":"_phone","type":"string"},{"internalType":"string","name":"_email","type":"string"},{"internalType":"string","name":"_photoUrl","type":"string"}],"name":"mintIdCard","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"string","name":"_transactionDetails","type":"string"},{"internalType":"string","name":"_resultId","type":"string"},{"internalType":"string","name":"_studentId","type":"string"},{"internalType":"string","name":"_batchCode","type":"string"},{"internalType":"string","name":"_examId","type":"string"},{"internalType":"string","name":"_semester","type":"string"},{"internalType":"string","name":"_marksData","type":"string"},{"internalType":"string","name":"_totalScore","type":"string"},{"internalType":"string","name":"_grade","type":"string"}],"name":"mintResult","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"string","name":"","type":"string"}],"name":"results","outputs":[{"internalType":"string","name":"previousHash","type":"string"},{"internalType":"string","name":"currentHash","type":"string"},{"internalType":"string","name":"transactionDetails","type":"string"},{"internalType":"string","name":"resultId","type":"string"},{"internalType":"string","name":"studentId","type":"string"},{"internalType":"string","name":"batchCode","type":"string"},{"internalType":"string","name":"examId","type":"string"},{"internalType":"string","name":"semester","type":"string"},{"internalType":"string","name":"marksData","type":"string"},{"internalType":"string","name":"totalScore","type":"string"},{"internalType":"string","name":"grade","type":"string"},{"internalType":"uint256","name":"timestamp","type":"uint256"}],"stateMutability":"view","type":"function"}];
 
 const certificateContract = new ethers.Contract(contractAddress, contractABI, wallet);
 
@@ -103,6 +103,12 @@ app.get('/api/courses', async (req, res) => {
 app.post('/api/courses', async (req, res) => {
     try {
         const { coursename, course_type, course_abbr, course_year, price, duration } = req.body;
+        
+        const existingCourse = await Course.findOne({ coursename, duration, price });
+        if (existingCourse) {
+            return res.status(400).json({ error: 'A course with the same name, duration, and price already exists.' });
+        }
+
         const seq = await getNextSequence(`course_seq_${course_abbr}_${course_type}`);
         const courseid = `CID/${course_abbr}/${course_type}/${pad(seq, 3)}`;
         
@@ -160,11 +166,11 @@ app.get('/api/batchMaster', async (req, res) => {
 // ==========================================
 app.post('/api/exams', async (req, res) => {
     try {
-        const { batchcode, exam_date, candidates } = req.body;
+        const { batchcode, exam_date, candidates, semester } = req.body;
         const seq = await getNextSequence(`exam_${batchcode}`);
         const examid = `EXID/${batchcode}/${pad(seq, 3)}`;
         
-        const exam = new Exam({ examid, batchcode, exam_date, candidates });
+        const exam = new Exam({ examid, batchcode, exam_date, candidates, semester });
         await exam.save();
         res.json(exam);
     } catch (err) {
@@ -206,6 +212,50 @@ app.post('/api/results', async (req, res) => {
             await result.save();
         }
         res.json(result);
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+});
+
+app.post('/api/results/mint', async (req, res) => {
+    try {
+        const { resultId, examid, sid, semester, marks, transactionHash, blockHash, contractAddress } = req.body;
+        
+        let total = 0;
+        let max_total = 0;
+        marks.forEach(m => { total += Number(m.score); max_total += Number(m.max_score); });
+        
+        const pct = (total / max_total) * 100;
+        let grade = 'F';
+        if (pct >= 90) grade = 'A+';
+        else if (pct >= 80) grade = 'A';
+        else if (pct >= 70) grade = 'B';
+        else if (pct >= 60) grade = 'C';
+        else if (pct >= 50) grade = 'D';
+
+        let result = await Result.findOne({ examid, sid, semester: semester || 1 });
+        if (result) {
+            result.marks = marks;
+            result.total_score = total;
+            result.grade = grade;
+            result.previous_hash = 'Handled internally by Solidity state';
+            result.current_hash = blockHash;
+            result.transaction_details = transactionHash;
+            result.transaction_hash = transactionHash;
+            result.contract_address = contractAddress;
+            await result.save();
+        } else {
+            result = new Result({ 
+                rsultid: resultId, examid, sid, semester: semester || 1, marks, total_score: total, grade,
+                previous_hash: 'Handled internally by Solidity state',
+                current_hash: blockHash,
+                transaction_details: transactionHash,
+                transaction_hash: transactionHash,
+                contract_address: contractAddress
+            });
+            await result.save();
+        }
+        res.json({ message: 'Result minted and saved successfully', result });
     } catch (err) {
         res.status(500).json({ error: err.message });
     }
@@ -377,6 +427,7 @@ app.post('/api/certificates/save', async (req, res) => {
             previous_hash: 'Handled internally by Solidity state', 
             current_hash: blockHash,
             transaction_details: transactionHash,
+            transaction_hash: transactionHash,
             contract_address: contractAddress
         });
 
@@ -403,6 +454,78 @@ app.get('/api/certificates/verify/:crtid', async (req, res) => {
         certificate.sid = student;
         
         res.status(200).json(certificate);
+    } catch (error) {
+        res.status(500).json({ error: 'Verification fetch failed', details: error.message });
+    }
+});
+
+// ==========================================
+// ID Card API
+// ==========================================
+app.get('/api/idcards/:sid', async (req, res) => {
+    try {
+        const idCards = await IdCard.find({ sid: req.params.sid });
+        res.json(idCards);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
+
+app.post('/api/idcards/request', async (req, res) => {
+    try {
+        const { idCardId, sid, fullname, courseName, batchcode, phone, email, photoUrl, validUntil } = req.body;
+        
+        const existingCard = await IdCard.findOne({ idCardId });
+        if (existingCard) {
+            return res.status(400).json({ error: 'ID Card request already exists or is generated.' });
+        }
+
+        const newIdCard = new IdCard({
+            idCardId, sid, fullname, courseName, batchcode, phone, email, photoUrl, status: 'Pending', validUntil
+        });
+
+        await newIdCard.save();
+        res.status(201).json({ message: 'ID Card requested successfully. Pending admin approval.', idCardId });
+    } catch (error) {
+        res.status(500).json({ error: 'Request failed', details: error.message });
+    }
+});
+
+app.get('/api/idcards/admin/pending', async (req, res) => {
+    try {
+        const pendingCards = await IdCard.find({ status: 'Pending' });
+        res.json(pendingCards);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
+
+app.post('/api/idcards/mint', async (req, res) => {
+    try {
+        const { idCardId, transactionHash, blockHash, contractAddress } = req.body;
+        
+        const card = await IdCard.findOne({ idCardId });
+        if (!card) return res.status(404).json({ error: 'ID Card request not found.' });
+
+        card.status = 'Minted';
+        card.previous_hash = 'Handled internally by Solidity state';
+        card.current_hash = blockHash;
+        card.transaction_details = transactionHash;
+        card.transaction_hash = transactionHash;
+        card.contract_address = contractAddress;
+
+        await card.save();
+        res.status(200).json({ message: 'ID Card minted successfully!', card });
+    } catch (error) {
+        res.status(500).json({ error: 'Minting save failed', details: error.message });
+    }
+});
+
+app.get('/api/idcards/verify/:idCardId', async (req, res) => {
+    try {
+        const idCard = await IdCard.findOne({ idCardId: req.params.idCardId }).lean();
+        if (!idCard) return res.status(404).json({ message: 'ID Card not found in database.' });
+        res.status(200).json(idCard);
     } catch (error) {
         res.status(500).json({ error: 'Verification fetch failed', details: error.message });
     }

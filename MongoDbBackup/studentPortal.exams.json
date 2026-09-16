@@ -32,4 +32,18 @@
   "created_at": {
     "$date": "2026-09-12T08:37:20.653Z"
   }
+},
+{
+  "_id": {
+    "$oid": "6aa7ceba9e942c87b7404ba4"
+  },
+  "examid": "EXID/CID/DSC/01/092026/001/001",
+  "batchcode": "CID/DSC/01/092026/001",
+  "exam_date": {
+    "$date": "2026-10-28T00:00:00.000Z"
+  },
+  "candidates": [
+    "SID-017"
+  ],
+  "__v": 0
 }]

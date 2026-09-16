@@ -189,8 +189,13 @@ const CertificateVerification = () => {
                   <div className="col-md-9 text-break font-monospace small bg-white p-2 rounded shadow-sm border-start border-primary border-3">{certData.current_hash}</div>
                 </div>
                 <div className="row mb-2">
-                  <div className="col-md-3 text-muted fw-semibold small">Transaction ID</div>
-                  <div className="col-md-9 text-break font-monospace small bg-white p-2 rounded shadow-sm border-start border-primary border-3">{certData.transaction_details}</div>
+                  <div className="col-md-3 text-muted fw-semibold small">Transaction Hash</div>
+                  <div className="col-md-9 text-break font-monospace small bg-white p-2 rounded shadow-sm border-start border-primary border-3 d-flex justify-content-between align-items-center">
+                    <span>{certData.transaction_hash || certData.transaction_details}</span>
+                    <a href={`https://etherscan.io/tx/${certData.transaction_hash || certData.transaction_details}`} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-outline-secondary" title="View on Block Explorer">
+                      <i className="bi bi-box-arrow-up-right"></i>
+                    </a>
+                  </div>
                 </div>
                 <div className="row">
                   <div className="col-md-3 text-muted fw-semibold small">Contract</div>
