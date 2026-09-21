@@ -3,7 +3,7 @@ import { ethers } from 'ethers';
 import { QRCodeSVG } from 'qrcode.react';
 
 const CONTRACT_ADDRESS = '0x5FbDB2315678afecb367f032d93F642f64180aa3';
-const CONTRACT_ABI = [{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"string","name":"certificateId","type":"string"},{"indexed":false,"internalType":"string","name":"currentHash","type":"string"},{"indexed":false,"internalType":"uint256","name":"timestamp","type":"uint256"}],"name":"CertificateMinted","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"string","name":"idCardId","type":"string"},{"indexed":false,"internalType":"string","name":"currentHash","type":"string"},{"indexed":false,"internalType":"uint256","name":"timestamp","type":"uint256"}],"name":"IdCardMinted","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"string","name":"resultId","type":"string"},{"indexed":false,"internalType":"string","name":"currentHash","type":"string"},{"indexed":false,"internalType":"uint256","name":"timestamp","type":"uint256"}],"name":"ResultMinted","type":"event"},{"inputs":[{"internalType":"string","name":"","type":"string"}],"name":"certificates","outputs":[{"internalType":"string","name":"previousHash","type":"string"},{"internalType":"string","name":"currentHash","type":"string"},{"internalType":"string","name":"transactionDetails","type":"string"},{"internalType":"string","name":"studentId","type":"string"},{"internalType":"string","name":"name","type":"string"},{"internalType":"string","name":"certificateId","type":"string"},{"internalType":"string","name":"marksScore","type":"string"},{"internalType":"string","name":"grade","type":"string"},{"internalType":"string","name":"courseName","type":"string"},{"internalType":"string","name":"phone","type":"string"},{"internalType":"string","name":"email","type":"string"},{"internalType":"uint256","name":"timestamp","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"string","name":"","type":"string"}],"name":"idCards","outputs":[{"internalType":"string","name":"previousHash","type":"string"},{"internalType":"string","name":"currentHash","type":"string"},{"internalType":"string","name":"transactionDetails","type":"string"},{"internalType":"string","name":"studentId","type":"string"},{"internalType":"string","name":"name","type":"string"},{"internalType":"string","name":"courseName","type":"string"},{"internalType":"string","name":"batchCode","type":"string"},{"internalType":"string","name":"phone","type":"string"},{"internalType":"string","name":"email","type":"string"},{"internalType":"string","name":"photoUrl","type":"string"},{"internalType":"uint256","name":"timestamp","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"lastBlockHash","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"string","name":"_transactionDetails","type":"string"},{"internalType":"string","name":"_certificateId","type":"string"},{"internalType":"string","name":"_studentId","type":"string"},{"internalType":"string","name":"_name","type":"string"},{"internalType":"string","name":"_courseName","type":"string"},{"internalType":"string","name":"_batchCode","type":"string"},{"internalType":"string","name":"_phone","type":"string"},{"internalType":"string","name":"_email","type":"string"},{"internalType":"string","name":"_photoUrl","type":"string"}],"name":"mintIdCard","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"string","name":"_transactionDetails","type":"string"},{"internalType":"string","name":"_resultId","type":"string"},{"internalType":"string","name":"_studentId","type":"string"},{"internalType":"string","name":"_batchCode","type":"string"},{"internalType":"string","name":"_examId","type":"string"},{"internalType":"string","name":"_semester","type":"string"},{"internalType":"string","name":"_marksData","type":"string"},{"internalType":"string","name":"_totalScore","type":"string"},{"internalType":"string","name":"_grade","type":"string"}],"name":"mintResult","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"string","name":"","type":"string"}],"name":"results","outputs":[{"internalType":"string","name":"previousHash","type":"string"},{"internalType":"string","name":"currentHash","type":"string"},{"internalType":"string","name":"transactionDetails","type":"string"},{"internalType":"string","name":"resultId","type":"string"},{"internalType":"string","name":"studentId","type":"string"},{"internalType":"string","name":"batchCode","type":"string"},{"internalType":"string","name":"examId","type":"string"},{"internalType":"string","name":"semester","type":"string"},{"internalType":"string","name":"marksData","type":"string"},{"internalType":"string","name":"totalScore","type":"string"},{"internalType":"string","name":"grade","type":"string"},{"internalType":"uint256","name":"timestamp","type":"uint256"}],"stateMutability":"view","type":"function"}];
+const CONTRACT_ABI = [{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"string","name":"certificateId","type":"string"},{"indexed":false,"internalType":"string","name":"currentHash","type":"string"},{"indexed":false,"internalType":"uint256","name":"timestamp","type":"uint256"}],"name":"CertificateMinted","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"string","name":"idCardId","type":"string"},{"indexed":false,"internalType":"string","name":"currentHash","type":"string"},{"indexed":false,"internalType":"uint256","name":"timestamp","type":"uint256"}],"name":"IdCardMinted","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"string","name":"resultId","type":"string"},{"indexed":false,"internalType":"string","name":"currentHash","type":"string"},{"indexed":false,"internalType":"uint256","name":"timestamp","type":"uint256"}],"name":"ResultMinted","type":"event"},{"inputs":[{"internalType":"string","name":"","type":"string"}],"name":"certificates","outputs":[{"internalType":"string","name":"previousHash","type":"string"},{"internalType":"string","name":"currentHash","type":"string"},{"internalType":"string","name":"transactionDetails","type":"string"},{"internalType":"string","name":"studentId","type":"string"},{"internalType":"string","name":"name","type":"string"},{"internalType":"string","name":"certificateId","type":"string"},{"internalType":"string","name":"marksScore","type":"string"},{"internalType":"string","name":"grade","type":"string"},{"internalType":"string","name":"courseName","type":"string"},{"internalType":"string","name":"phone","type":"string"},{"internalType":"string","name":"email","type":"string"},{"internalType":"uint256","name":"timestamp","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"string","name":"","type":"string"}],"name":"idCards","outputs":[{"internalType":"string","name":"previousHash","type":"string"},{"internalType":"string","name":"currentHash","type":"string"},{"internalType":"string","name":"transactionDetails","type":"string"},{"internalType":"string","name":"studentId","type":"string"},{"internalType":"string","name":"name","type":"string"},{"internalType":"string","name":"courseName","type":"string"},{"internalType":"string","name":"batchCode","type":"string"},{"internalType":"string","name":"phone","type":"string"},{"internalType":"string","name":"email","type":"string"},{"internalType":"string","name":"photoUrl","type":"string"},{"internalType":"uint256","name":"timestamp","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"lastBlockHash","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"string","name":"_transactionDetails","type":"string"},{"internalType":"string","name":"_studentId","type":"string"},{"internalType":"string","name":"_name","type":"string"},{"internalType":"string","name":"_certificateId","type":"string"},{"internalType":"string","name":"_marksScore","type":"string"},{"internalType":"string","name":"_grade","type":"string"},{"internalType":"string","name":"_courseName","type":"string"},{"internalType":"string","name":"_phone","type":"string"},{"internalType":"string","name":"_email","type":"string"}],"name":"mintCertificate","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"string","name":"_transactionDetails","type":"string"},{"internalType":"string","name":"_idCardId","type":"string"},{"internalType":"string","name":"_studentId","type":"string"},{"internalType":"string","name":"_name","type":"string"},{"internalType":"string","name":"_courseName","type":"string"},{"internalType":"string","name":"_batchCode","type":"string"},{"internalType":"string","name":"_phone","type":"string"},{"internalType":"string","name":"_email","type":"string"},{"internalType":"string","name":"_photoUrl","type":"string"}],"name":"mintIdCard","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"string","name":"_transactionDetails","type":"string"},{"internalType":"string","name":"_resultId","type":"string"},{"internalType":"string","name":"_studentId","type":"string"},{"internalType":"string","name":"_batchCode","type":"string"},{"internalType":"string","name":"_examId","type":"string"},{"internalType":"string","name":"_semester","type":"string"},{"internalType":"string","name":"_marksData","type":"string"},{"internalType":"string","name":"_totalScore","type":"string"},{"internalType":"string","name":"_grade","type":"string"}],"name":"mintResult","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"string","name":"","type":"string"}],"name":"results","outputs":[{"internalType":"string","name":"previousHash","type":"string"},{"internalType":"string","name":"currentHash","type":"string"},{"internalType":"string","name":"transactionDetails","type":"string"},{"internalType":"string","name":"resultId","type":"string"},{"internalType":"string","name":"studentId","type":"string"},{"internalType":"string","name":"batchCode","type":"string"},{"internalType":"string","name":"examId","type":"string"},{"internalType":"string","name":"semester","type":"string"},{"internalType":"string","name":"marksData","type":"string"},{"internalType":"string","name":"totalScore","type":"string"},{"internalType":"string","name":"grade","type":"string"},{"internalType":"uint256","name":"timestamp","type":"uint256"}],"stateMutability":"view","type":"function"}];
 const AdminDashboard = () => {
     const [activeTab, setActiveTab] = useState('courses');
     const [courses, setCourses] = useState([]);
@@ -13,7 +13,8 @@ const AdminDashboard = () => {
 
     const [courseForm, setCourseForm] = useState({ coursename: '', course_type: '01', course_abbr: '', course_year: new Date().getFullYear().toString(), price: '', duration: '' });
     const [batchForm, setBatchForm] = useState({ courseid: '', start_date: '', end_date: '', year: new Date().getFullYear().toString() });
-    const [examForm, setExamForm] = useState({ batchcode: '', exam_date: '', candidates: '', semester: '' });
+    const [examForm, setExamForm] = useState({ batchcode: '', exam_date: '', exam_time: '', candidates: '', semester: '' });
+    const [examFormStudents, setExamFormStudents] = useState([]);
     const [resultForm, setResultForm] = useState({ batchcode: '', semester: 1 });
     const [resultStudents, setResultStudents] = useState([]);
     const [marksData, setMarksData] = useState({}); // { sid: ['80', '90', '70', '85', '88'] }
@@ -98,9 +99,19 @@ const AdminDashboard = () => {
     const handleCreateExam = async (e) => {
         e.preventDefault();
         try {
-            const stdRes = await fetch(`http://localhost:5000/api/students/batch/${encodeURIComponent(examForm.batchcode)}`);
-            const students = await stdRes.json();
-            const candidates = students.map(st => st.sid);
+            const isCert = String(examForm.selectedBatchDetail?.courseid?.course_type).toLowerCase() === '01' || String(examForm.selectedBatchDetail?.courseid?.course_type).toLowerCase().includes('certificate');
+            const effectiveSemester = isCert ? undefined : examForm.semester;
+            
+            const unenrolled = examFormStudents.filter(st => {
+                const isEnrolled = exams.some(ex => ex.batchcode === examForm.batchcode && (isCert || String(ex.semester) === String(effectiveSemester)) && ex.candidates?.includes(st.sid));
+                return !isEnrolled;
+            });
+            
+            const candidates = unenrolled.map(st => st.sid);
+            if (candidates.length === 0) {
+                setStatus({ type: 'warning', message: 'All students are already enrolled for this exam slot.' });
+                return;
+            }
 
             const payload = { ...examForm, candidates };
             const res = await fetch('http://localhost:5000/api/exams', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
@@ -718,9 +729,19 @@ const AdminDashboard = () => {
                                     <form onSubmit={handleCreateExam}>
                                     <div className="mb-4">
                                         <label className="form-label text-muted small fw-bold text-uppercase">Select Batch</label>
-                                        <select className="form-select form-select-lg bg-light border-0" required onChange={e => {
-                                            const selectedBatch = batchMaster.find(b => b.batchcode === e.target.value);
-                                            setExamForm({...examForm, batchcode: e.target.value, selectedBatchDetail: selectedBatch});
+                                        <select className="form-select form-select-lg bg-light border-0" required onChange={async e => {
+                                            const val = e.target.value;
+                                            const selectedBatch = batchMaster.find(b => b.batchcode === val);
+                                            setExamForm({...examForm, batchcode: val, selectedBatchDetail: selectedBatch});
+                                            if (val) {
+                                                try {
+                                                    const stdRes = await fetch(`http://localhost:5000/api/students/batch/${encodeURIComponent(val)}`);
+                                                    const students = await stdRes.json();
+                                                    setExamFormStudents(students);
+                                                } catch (err) { console.error(err); }
+                                            } else {
+                                                setExamFormStudents([]);
+                                            }
                                         }}>
                                             <option value="">Choose Batch...</option>
                                             {batchMaster.map(b => (
@@ -773,6 +794,51 @@ const AdminDashboard = () => {
                                         <label className="form-label text-muted small fw-bold text-uppercase">Exam Date</label>
                                         <input type="date" className="form-control form-control-lg bg-light border-0" required onChange={e => setExamForm({...examForm, exam_date: e.target.value})} value={examForm.exam_date} />
                                     </div>
+                                    {examForm.selectedBatchDetail && (() => {
+                                        const courseTypeStr = String(examForm.selectedBatchDetail.courseid?.course_type).toLowerCase();
+                                        const isCert = courseTypeStr === '01' || courseTypeStr.includes('certificate');
+                                        const timeSlots = isCert 
+                                            ? ["09:00 AM - 11:00 AM", "11:00 AM - 01:00 PM", "01:00 PM - 03:00 PM", "03:00 PM - 05:00 PM"]
+                                            : ["09:00 AM - 12:00 PM", "10:00 AM - 01:00 PM", "11:00 AM - 02:00 PM", "12:00 PM - 03:00 PM", "01:00 PM - 04:00 PM", "02:00 PM - 05:00 PM"];
+                                        
+                                        return (
+                                            <div className="mb-4">
+                                                <label className="form-label text-muted small fw-bold text-uppercase">Exam Time</label>
+                                                <select className="form-select form-select-lg bg-light border-0" required onChange={e => setExamForm({...examForm, exam_time: e.target.value})} value={examForm.exam_time}>
+                                                    <option value="">Choose Time Slot...</option>
+                                                    {timeSlots.map(slot => (
+                                                        <option key={slot} value={slot}>{slot}</option>
+                                                    ))}
+                                                </select>
+                                            </div>
+                                        );
+                                    })()}
+                                    {examForm.batchcode && examForm.selectedBatchDetail && (() => {
+                                        const isCert = String(examForm.selectedBatchDetail.courseid?.course_type).toLowerCase() === '01' || String(examForm.selectedBatchDetail.courseid?.course_type).toLowerCase().includes('certificate');
+                                        const effectiveSemester = isCert ? undefined : examForm.semester;
+
+                                        const unenrolled = examFormStudents.filter(st => {
+                                            const isEnrolled = exams.some(ex => ex.batchcode === examForm.batchcode && (isCert || String(ex.semester) === String(effectiveSemester)) && ex.candidates?.includes(st.sid));
+                                            return !isEnrolled;
+                                        });
+
+                                        return (
+                                            <div className="mb-4">
+                                                <label className="form-label text-muted small fw-bold text-uppercase">Candidates Not Enrolled ({unenrolled.length})</label>
+                                                {unenrolled.length > 0 ? (
+                                                    <div className="border rounded p-2 bg-white" style={{maxHeight: '150px', overflowY: 'auto'}}>
+                                                        <ul className="list-group list-group-flush">
+                                                            {unenrolled.map(st => (
+                                                                <li key={st.sid} className="list-group-item py-1 px-2 small">{st.sid} - {st.fullname}</li>
+                                                            ))}
+                                                        </ul>
+                                                    </div>
+                                                ) : (
+                                                    <div className="alert alert-success py-2 mb-0 small">All students are already enrolled for this exam slot.</div>
+                                                )}
+                                            </div>
+                                        );
+                                    })()}
                                     <button type="submit" className="btn btn-primary btn-lg rounded-pill px-4 fw-bold shadow-sm">Generate Exam Slot</button>
                                 </form>
                                 <div className="mt-5">
@@ -784,7 +850,7 @@ const AdminDashboard = () => {
                                                     <th>Exam ID</th>
                                                     <th>Batch Code</th>
                                                     <th>Semester</th>
-                                                    <th>Exam Date</th>
+                                                    <th>Exam Date & Time</th>
                                                     <th>Candidates</th>
                                                 </tr>
                                             </thead>
@@ -794,7 +860,7 @@ const AdminDashboard = () => {
                                                         <td className="fw-bold">{ex.examid}</td>
                                                         <td>{ex.batchcode}</td>
                                                         <td>{ex.semester || 'N/A'}</td>
-                                                        <td>{new Date(ex.exam_date).toLocaleDateString()}</td>
+                                                        <td>{new Date(ex.exam_date).toLocaleDateString()} {ex.exam_time && <><br/><small className="text-muted">{ex.exam_time}</small></>}</td>
                                                         <td>{ex.candidates?.length || 0}</td>
                                                     </tr>
                                                 ))}
@@ -1346,7 +1412,7 @@ const AdminDashboard = () => {
                                                                             <tr key={exam.examid}>
                                                                                 <td><strong>{exam.examid}</strong></td>
                                                                                 <td>{exam.batchcode}</td>
-                                                                                <td>{examDate.toLocaleString()}</td>
+                                                                                <td>{examDate.toLocaleDateString()} {exam.exam_time && <><br/><small className="text-muted">{exam.exam_time}</small></>}</td>
                                                                                 <td>
                                                                                     {isPast ? (
                                                                                         appeared ? <span className="badge bg-success">Appeared</span> : <span className="badge bg-danger">Missed</span>

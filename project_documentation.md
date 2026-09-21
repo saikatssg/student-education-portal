@@ -138,7 +138,7 @@ flowchart TD
     P3((3. Blockchain \n Integration))
     
     DB[(MongoDB)]
-    BC[(Ethereum Blockchain)]
+    BC[(Ethereum Blockchain)]   
 
     Student -- Sign Up Details --> P1
     Admin -- Approvals/Logins --> P1

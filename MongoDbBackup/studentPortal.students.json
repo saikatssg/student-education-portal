@@ -477,4 +477,29 @@
   "__v": 0,
   "batchcode": "CCOA/09202601",
   "crtid": "CRT/CCOA/09202601/SID-019/001"
+},
+{
+  "_id": {
+    "$oid": "6aabce252b95b0fd71208c9a"
+  },
+  "sid": "SID-020",
+  "fname": "Subhankar",
+  "lname": "Saha",
+  "username": "subhankar",
+  "password": "Subha@123",
+  "email": "subhankar@gmail.com",
+  "phone": "9873254617",
+  "city": "Kolkata",
+  "dob": {
+    "$date": "2007-06-15T00:00:00.000Z"
+  },
+  "photo": "1789644325552.jpg",
+  "role": "candidate",
+  "prevCode": [],
+  "created_at": {
+    "$date": "2026-09-17T11:25:25.564Z"
+  },
+  "__v": 0,
+  "batchcode": "CID/CCWD/01/012026/001",
+  "crtid": "CRT/CID/CCWD/01/012026/001/SID-020/001"
 }]

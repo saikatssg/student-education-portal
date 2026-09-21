@@ -10,15 +10,17 @@ import CandidateDashboard from './components/CandidateDashboard';
 import About from './components/About';
 import Contact from './components/Contact';
 import IdVerification from './components/IdVerification';
+import myLogo from './assets/nielit.jpg';
 
 const LogoutButton = () => {
   const navigate = useNavigate();
   return (
-    <button 
-      className="btn btn-outline-danger ms-3 btn-sm fw-bold" 
+    <button
+      className="btn btn-outline-danger ms-3 btn-sm fw-bold"
       onClick={() => {
         localStorage.removeItem('role');
         localStorage.removeItem('student');
+        localStorage.removeItem('admin');
         window.location.href = '/';
       }}
     >
@@ -29,17 +31,26 @@ const LogoutButton = () => {
 
 const App = () => {
   const role = localStorage.getItem('role');
+  const student = JSON.parse(localStorage.getItem('student') || 'null');
+  const admin = JSON.parse(localStorage.getItem('admin') || 'null');
+
+  const getDisplayName = () => {
+    if (role === 'admin' && admin) return admin.name;
+    if (role === 'candidate' && student) return student.fname + ' ' + (student.lname || '');
+    return '';
+  };
+  const displayName = getDisplayName();
 
   return (
     <Router>
       <div className="d-flex flex-column min-vh-100 bg-light">
-        
+
         {/* Top Contact Bar */}
         <div className="top-bar d-none d-lg-block">
           <div className="container d-flex justify-content-between align-items-center">
             <div>
-              <span className="me-4"><i className="bi bi-envelope me-2"></i>info@educate.com</span>
-              <span><i className="bi bi-telephone me-2"></i>+1 800 123 4567</span>
+              <span className="me-4 " style={{ cursor: "pointer" }}><i className="bi bi-envelope me-2"></i>https://kolkata.nielit.gov.in/</span>
+              <span><i className="bi bi-telephone me-2"></i>+91-33-4602-2246</span>
             </div>
             <div>
               <span className="me-3 cursor-pointer">Facebook</span>
@@ -58,7 +69,7 @@ const App = () => {
             <button className="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
               <span className="navbar-toggler-icon"></span>
             </button>
-            
+
             <div className="collapse navbar-collapse" id="mainNavbar">
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0 me-4">
                 <li className="nav-item">
@@ -84,10 +95,15 @@ const App = () => {
                   </li>
                 )}
               </ul>
-              
+
               <div className="d-flex align-items-center">
                 {!role && (
                   <NavLink to="/signup" className="btn btn-primary fw-bold px-4 rounded-pill shadow-sm">Sign Up</NavLink>
+                )}
+                {role && (
+                  <span className="me-3 fw-bold text-dark">
+                    Welcome, <span className="text-primary-custom">{displayName}</span>
+                  </span>
                 )}
                 {role && <LogoutButton />}
               </div>
@@ -113,29 +129,43 @@ const App = () => {
             <div className="row g-4">
               <div className="col-lg-4 col-md-6">
                 <h4 className="fw-bold mb-4"><span className="text-primary-custom">EDU</span>CATE</h4>
-                <p className="text-muted">Empowering the next generation with decentralized, verifiable certificates and seamless course management on the Web3 blockchain.</p>
+                <p className=" text-light" style={{ width: '70%' }}>Empowering the next generation with decentralized, verifiable certificates and seamless course management on the Web3 blockchain.</p>
+                <div className='my-2'>
+                  <img src={myLogo} alt="" style={{ width: '200px', margin: '15px 0' }} />
+                </div>
+                <p className="text-light" style={{ width: '70%' }}><b>Website : </b> <a className='text-primary-custom ms-2' href="https://kolkata.nielit.gov.in/" target="_blank" rel="noopener noreferrer">https://kolkata.nielit.gov.in/</a></p>
               </div>
               <div className="col-lg-4 col-md-6">
                 <h5 className="fw-bold mb-4">Quick Links</h5>
                 <ul className="list-unstyled text-muted">
-                  <li className="mb-2"><NavLink to="/" className="text-muted text-decoration-none hover-primary">Home</NavLink></li>
-                  <li className="mb-2"><NavLink to="/about" className="text-muted text-decoration-none hover-primary">About Us</NavLink></li>
-                  <li className="mb-2"><NavLink to="/contact" className="text-muted text-decoration-none hover-primary">Contact Us</NavLink></li>
-                  <li className="mb-2"><NavLink to="/verify" className="text-muted text-decoration-none hover-primary">Verify Certificate</NavLink></li>
-                  <li className="mb-2"><NavLink to="/signup" className="text-muted text-decoration-none hover-primary">Admissions</NavLink></li>
+                  <li className="mb-2"><NavLink to="/" className="text-light text-decoration-none hover-primary">Home</NavLink></li>
+                  <li className="mb-2"><NavLink to="/about" className="text-light text-decoration-none hover-primary">About Us</NavLink></li>
+                  <li className="mb-2"><NavLink to="/contact" className="text-light text-decoration-none hover-primary">Contact Us</NavLink></li>
+                  <li className="mb-2"><NavLink to="/verify" className="text-light text-decoration-none hover-primary">Verify Certificate</NavLink></li>
+                  <li className="mb-2"><NavLink to="/signup" className="text-light text-decoration-none hover-primary">Admissions</NavLink></li>
                 </ul>
               </div>
               <div className="col-lg-4 col-md-12">
-                <h5 className="fw-bold mb-4">Contact Us</h5>
-                <ul className="list-unstyled text-muted">
-                  <li className="mb-2">123 Education Lane, Learning City</li>
-                  <li className="mb-2">Email: info@educate.com</li>
-                  <li className="mb-2">Phone: +1 800 123 4567</li>
+                <h5 className="fw-bold mb-4 text-light">Contact Us</h5>
+                <ul className="list-unstyled  text-light">
+                  <li><b>Unit 1 :</b></li>
+                  <li className="mb-2">Jadavpur University Campus, Kolkata-700032</li>
+                  <li className="mb-2">Telephone (EPABX): (033) 2414-6054 / 6081</li>
+                  <li className="mb-2">Mobile: 9477301644</li>
+                </ul>
+
+                <ul className="list-unstyled  text-light">
+                  <li><b>Unit 1 :</b></li>
+                  <li className="mb-2">Salt Lake Campus,</li>
+                  <li className="mb-2">BF-267, Sector-I, Salt Lake,</li>
+                  <li className="mb-2">Kolkata - 700064</li>
+                  <li className="mb-2">Phone: 91-033-4602-2246</li>
                 </ul>
               </div>
             </div>
-            <div className="border-top border-secondary mt-4 pt-4 text-center text-muted">
-              <small>&copy; {new Date().getFullYear()} EDUCATE Portal. Document design by Saikat Sengupta.</small>
+            <div className="border-top border-secondary mt-4 pt-4 text-center text-light" style={{ cursor: 'pointer' }}>
+              <p>&copy; {new Date().getFullYear()} EDUCATE Portal. All rights reserved.</p>
+              <p> <strong>Project Cordinator :</strong> <span className='text-primary-custom ms-2'>Debapriya  Bhattacharyya </span> &nbsp;&nbsp;| &nbsp;&nbsp; <strong>Developed By : </strong> <span className='text-primary-custom ms-2'> Saikat Sengupta </span> </p>
             </div>
           </div>
         </footer>

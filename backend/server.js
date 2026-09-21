@@ -166,11 +166,11 @@ app.get('/api/batchMaster', async (req, res) => {
 // ==========================================
 app.post('/api/exams', async (req, res) => {
     try {
-        const { batchcode, exam_date, candidates, semester } = req.body;
+        const { batchcode, exam_date, exam_time, candidates, semester } = req.body;
         const seq = await getNextSequence(`exam_${batchcode}`);
         const examid = `EXID/${batchcode}/${pad(seq, 3)}`;
         
-        const exam = new Exam({ examid, batchcode, exam_date, candidates, semester });
+        const exam = new Exam({ examid, batchcode, exam_date, exam_time, candidates, semester });
         await exam.save();
         res.json(exam);
     } catch (err) {
@@ -450,7 +450,12 @@ app.get('/api/certificates/verify/:crtid', async (req, res) => {
         const certificate = await Certificate.findOne({ crtid: req.params.crtid }).lean();
         if (!certificate) return res.status(404).json({ message: 'Certificate not found in database.' });
         
-        const student = await Student.findOne({ sid: certificate.sid }, 'fname lname email').lean();
+        const student = await Student.findOne({ sid: certificate.sid }, 'sid fname lname email photo').lean();
+        
+        // Fetch photoUrl from IdCard as a robust fallback
+        const idCard = await IdCard.findOne({ sid: student ? student.sid : certificate.sid }).lean();
+        certificate.photoUrl = idCard ? idCard.photoUrl : null;
+        
         certificate.sid = student;
         
         res.status(200).json(certificate);

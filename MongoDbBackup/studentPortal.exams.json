@@ -46,4 +46,20 @@
     "SID-017"
   ],
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6aabce832b95b0fd71208c9c"
+  },
+  "examid": "EXID/CID/CCWD/01/012026/001/002",
+  "batchcode": "CID/CCWD/01/012026/001",
+  "exam_date": {
+    "$date": "2026-11-26T00:00:00.000Z"
+  },
+  "exam_time": "01:00 PM - 03:00 PM",
+  "semester": null,
+  "candidates": [
+    "SID-020"
+  ],
+  "__v": 0
 }]

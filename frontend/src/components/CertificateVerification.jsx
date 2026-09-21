@@ -118,66 +118,112 @@ const CertificateVerification = () => {
             <div className="card shadow-lg border-0 overflow-hidden card-hover-shadow mx-auto" style={{ maxWidth: '1128px' }}>
               <div
                 ref={certificateRef}
-                className="bg-white position-relative p-5 text-center"
+                className="position-relative text-center shadow-sm"
                 style={{
                   cursor: 'pointer',
-                  border: '15px solid #0d6efd',
-                  minHeight: '600px',
+                  width: '1128px',
+                  minHeight: '798px',
                   display: 'flex',
                   flexDirection: 'column',
                   justifyContent: 'center',
-                  background: 'linear-gradient(to bottom right, #ffffff, #f0f8ff)'
+                  padding: '80px',
+                  background: 'linear-gradient(135deg, #ffffff 0%, #fdfcfb 40%, #f2eae0 100%)',
+                  border: '15px solid #1a365d', /* Thick Navy Outer Border */
+                  boxShadow: 'inset 0 0 0 6px #fcfbf9, inset 0 0 0 10px #d4af37, inset 0 0 0 16px #fcfbf9, inset 0 0 0 18px #1a365d, inset 0 0 40px rgba(0,0,0,0.05)', /* Multiple inset elegant borders */
+                  fontFamily: '"Times New Roman", Times, serif',
+                  color: '#4a4a4a',
+                  boxSizing: 'border-box'
                 }}
               >
-                {/* Decorative Corners */}
-                <div className="position-absolute top-0 start-0 border-top border-start border-primary border-5 m-3" style={{ width: '50px', height: '50px' }}></div>
-                <div className="position-absolute top-0 end-0 border-top border-end border-primary border-5 m-3" style={{ width: '50px', height: '50px' }}></div>
-                <div className="position-absolute bottom-0 start-0 border-bottom border-start border-primary border-5 m-3" style={{ width: '50px', height: '50px' }}></div>
-                <div className="position-absolute bottom-0 end-0 border-bottom border-end border-primary border-5 m-3" style={{ width: '50px', height: '50px' }}></div>
-
-                {/* Certificate Content */}
-                <div className="mb-4">
-                  <h1 className="fw-bold text-primary display-4" style={{ fontFamily: 'Georgia, serif' }}>CERTIFICATE</h1>
-                  <h4 className="text-uppercase tracking-wide text-secondary">OF COMPLETION</h4>
-                </div>
-
-                <div className="my-4">
-                  <p className="fst-italic fs-4 text-muted mb-4">This is to certify that</p>
-                  <h2 className="fw-bold  display-4   my-3 border-bottom border-2 border-dark pb-2 d-inline-block px-5" style={{ fontFamily: '"Pinyon Script", serif', letterSpacing: '5px', color: 'rgba(2, 64, 188, 1)' }}>
-                    {certData.fullname}
-                  </h2>
-                </div>
-
-                <div className="my-4 px-5">
-                  <p className="text-muted mb-2">has successfully completed the course</p>
-                  <h3 className="fw-bold text-primary-custom">{certData.coursename}</h3>
-                  <p className="mt-3 text-muted">
-                    Achieving a score of <strong className="text-dark">{certData.score}</strong> and a grade of <strong className="text-dark">{certData.grade}</strong>.
-                  </p>
-                </div>
-
-                <div className="d-flex justify-content-between align-items-end mt-5 px-5">
-                  <div className="text-center">
-                    <div className="border-bottom border-dark mb-1" style={{ width: '200px' }}>
-                      {/* Signature placeholder */}
-                      <span className="font-monospace text-muted fst-italic" style={{ fontSize: '1.2rem' }}>Saikat Sengupta</span>
+                {/* Clean Flexbox Layout Wrapper to avoid any absolute positioning overlaps */}
+                <div className="h-100 d-flex flex-column justify-content-between">
+                  
+                  {/* Header Row: Student ID, Logo, Spacer */}
+                  <div className="d-flex justify-content-between align-items-start w-100">
+                    <div className="text-start" style={{ minWidth: '150px' }}>
+                      <p className="text-muted fw-bold mb-0 small" style={{ letterSpacing: '1px' }}>STUDENT ID</p>
+                      <p className="fw-bolder" style={{ color: '#2b2d31' }}>{typeof certData.sid === 'string' ? certData.sid : (certData.crtid?.match(/SID-\d+/)?.[0] || 'N/A')}</p>
                     </div>
-                    <p className="small text-muted text-uppercase fw-bold m-0">Authorized Signature</p>
+                    <div className="text-center" style={{ flexGrow: 1 }}>
+                      <img src="/assets/educate-logo.jpg" alt="EDUCATE Logo" style={{ height: '70px', objectFit: 'contain' }} />
+                    </div>
+                    <div className="text-end" style={{ minWidth: '150px' }}>
+                      {/* Empty spacer to perfectly balance the header flex row */}
+                    </div>
                   </div>
 
-                  <div className="text-center">
-                    <div className="badge bg-primary text-white rounded-circle d-flex align-items-center justify-content-center shadow" style={{ width: '100px', height: '100px', fontSize: '10px' }}>
-                      <div className="text-center">
-                        <i className="bi bi-award fs-3 d-block mb-1"></i>
-                        VERIFIED
+                  {/* Central Certificate Body */}
+                  <div className="flex-grow-1 d-flex flex-column align-items-center justify-content-center">
+                    <div className="mb-3">
+                      <h1 className="display-4 mb-0" style={{ fontFamily: 'Georgia, serif', color: '#4a4a4a', letterSpacing: '4px' }}>CERTIFICATE</h1>
+                      <h5 className="text-uppercase mt-1" style={{ color: '#555', letterSpacing: '3px', fontWeight: '400' }}>OF COMPLETION</h5>
+                    </div>
+
+                    <div className="my-2">
+                      <p className="text-uppercase tracking-widest mb-3" style={{ letterSpacing: '1px', fontSize: '0.9rem', color: '#666' }}>THIS CERTIFICATE IS AWARDED TO</p>
+                      
+                      {/* Centered Student Profile Picture */}
+                      <div className="mx-auto mb-2 shadow-sm rounded-circle" style={{ width: '90px', height: '90px', border: '4px solid #fff', outline: '2px solid #d4af37', overflow: 'hidden', backgroundColor: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <img
+                          src={certData.photoUrl ? `http://localhost:5000/uploads/${certData.photoUrl}` : ((typeof certData.sid === 'object' && certData.sid.photo) ? `http://localhost:5000/uploads/${certData.sid.photo}` : "https://cdn-icons-png.flaticon.com/512/149/149071.png")}
+                          alt="Student Profile"
+                          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                          onError={(e) => { e.target.onerror = null; e.target.src = "https://cdn-icons-png.flaticon.com/512/149/149071.png" }}
+                        />
+                      </div>
+
+                      <h2 className="display-3 my-1" style={{ fontFamily: '"Great Vibes", "Pinyon Script", cursive', color: '#d4af37', paddingBottom: '5px' }}>
+                        {certData.fullname}
+                      </h2>
+                      <div style={{ width: '60%', margin: '0 auto', borderBottom: '1px solid #d4af37' }}></div>
+                    </div>
+
+                    <div className="my-2 px-5" style={{ maxWidth: '800px', margin: '0 auto' }}>
+                      <p className="mb-3" style={{ fontSize: '1.1rem', color: '#4a4a4a', lineHeight: '1.6' }}>
+                        for successfully completing the <strong>{certData.coursename || 'N/A'}</strong> course
+                        conducted on {new Date(certData.created_at || Date.now()).toLocaleDateString()}, showcasing dedication and professional skills.
+                      </p>
+
+                      <div className="d-flex justify-content-center gap-4 mt-3">
+                        <span className="badge border px-4 py-2" style={{ backgroundColor: 'transparent', color: '#4a4a4a', borderColor: '#4a4a4a', fontSize: '0.9rem' }}>
+                          Grade: {certData.grade}
+                        </span>
+                        <span className="badge border px-4 py-2" style={{ backgroundColor: 'transparent', color: '#4a4a4a', borderColor: '#4a4a4a', fontSize: '0.9rem' }}>
+                          Score: {certData.score}
+                        </span>
+                      </div>
+                    </div>
+
+                    <div className="d-flex justify-content-center align-items-end mt-3">
+                      <div className="text-center" style={{ width: '250px' }}>
+                        <div className="mt-3 pt-2">
+                          <h4 className="mb-0" style={{ fontFamily: '"Comic Sans MS", "Chalkboard SE", cursive', color: '#4a4a4a' }}>Saikat Sengupta</h4>
+                          <hr className="mx-auto my-2 border-secondary" style={{ width: '200px', opacity: 0.3 }} />
+                          <p className="text-muted small text-uppercase" style={{ letterSpacing: '2px', fontSize: '0.75rem', marginBottom: 0 }}>Lead Trainer</p>
+                        </div>
                       </div>
                     </div>
                   </div>
 
-                  <div className="text-start" style={{ width: '250px' }}>
-                    <p className="small text-muted mb-1 border-bottom border-muted pb-1"><strong>ID:</strong> {certData.crtid}</p>
-                    <p className="small text-muted mb-0" style={{ fontSize: '10px' }}><strong>TX:</strong> {certData.transaction_details.substring(0, 25)}...</p>
+                  {/* Footer Row: ID/TX, Spacer, Verified Badge */}
+                  <div className="d-flex justify-content-between align-items-end w-100">
+                    <div className="text-start" style={{ minWidth: '150px' }}>
+                      <p className="mb-1 fw-bold" style={{ fontSize: '0.75rem', color: '#888' }}><strong>ID:</strong> {certData.crtid}</p>
+                      <p className="mb-0 fw-bold" style={{ fontSize: '0.75rem', color: '#888' }}><strong>TX:</strong> {certData.transaction_details ? certData.transaction_details.substring(0, 20) + '...' : 'Pending...'}</p>
+                    </div>
+                    <div className="text-center" style={{ flexGrow: 1 }}>
+                      {/* Empty space in center footer */}
+                    </div>
+                    <div className="text-end d-flex justify-content-end" style={{ minWidth: '150px' }}>
+                      <div className="badge rounded-circle d-flex align-items-center justify-content-center shadow-sm" style={{ width: '70px', height: '70px', border: '2px solid #e58e1a', color: '#e58e1a', background: '#fff' }}>
+                        <div className="text-center">
+                          <i className="bi bi-award fs-5 d-block mb-1"></i>
+                          <span className="fw-bold" style={{ fontSize: '0.5rem', letterSpacing: '1px' }}>VERIFIED</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
+
                 </div>
               </div>
 

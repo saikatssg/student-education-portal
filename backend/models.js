@@ -69,6 +69,7 @@ const examSchema = new mongoose.Schema({
     examid: { type: String, required: true, unique: true }, // e.g. EXID/ACAD/0109202601/001
     batchcode: { type: String, ref: 'Batch', required: true },
     exam_date: { type: Date, required: true },
+    exam_time: { type: String, required: true },
     semester: { type: Number },
     candidates: [{ type: String, ref: 'Student' }] // SIDs of candidates sitting for exam
 });

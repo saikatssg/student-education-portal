@@ -23,6 +23,7 @@ const Home = () => {
             if (res.ok) {
                 localStorage.setItem('role', data.role);
                 if (data.student) localStorage.setItem('student', JSON.stringify(data.student));
+                if (data.admin) localStorage.setItem('admin', JSON.stringify(data.admin));
 
                 if (data.role === 'admin') window.location.href = '/admin';
                 else window.location.href = '/candidate';
@@ -108,7 +109,7 @@ const Home = () => {
                                             <button type="submit" className="btn btn-primary btn-lg w-100 rounded-pill fw-bold shadow-sm">LOGIN NOW</button>
                                         </form>
                                         <div className="mt-4 text-center">
-                                            <small className="text-muted">Admin demo: <b>saikat / Saikat@123</b></small>
+                                            <small className="text-muted">Please login with your Admin or Student credentials.</small>
                                         </div>
                                     </div>
                                 </div>
