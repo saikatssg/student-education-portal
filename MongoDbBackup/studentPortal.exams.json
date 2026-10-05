@@ -62,4 +62,21 @@
     "SID-020"
   ],
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ab0eb90617d33f210cf25b1"
+  },
+  "examid": "EXID/CID/DSC/01/092026/001/002",
+  "batchcode": "CID/DSC/01/092026/001",
+  "exam_date": {
+    "$date": "2026-10-28T00:00:00.000Z"
+  },
+  "exam_time": "11:00 AM - 01:00 PM",
+  "semester": null,
+  "candidates": [
+    "SID-003",
+    "SID-018"
+  ],
+  "__v": 0
 }]

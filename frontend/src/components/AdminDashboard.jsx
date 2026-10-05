@@ -1443,7 +1443,8 @@ const AdminDashboard = () => {
                                                     if (batchResults.length === 0) return null;
                                                     
                                                     const sems = [...new Set(batchResults.map(r => r.semester))].sort();
-                                                    const isDiploma = batch.courseDetails?.course_type === '02';
+                                                    const isCert = batch.courseDetails?.course_type === '01' || batch.batchcode?.includes('CC');
+                                                    const isDiploma = batch.courseDetails?.course_type === '02' || batch.batchcode?.includes('DC');
                                                     const requiredSems = isDiploma ? 2 : 1;
                                                     
                                                     let totalAvg = 0;
@@ -1460,7 +1461,7 @@ const AdminDashboard = () => {
                                                                     totalAvg += pct;
                                                                     return (
                                                                         <div key={`sem-${sem}`} className="mb-4">
-                                                                            <h6 className="fw-bold text-secondary">Semester {sem}</h6>
+                                                                            <h6 className="fw-bold text-secondary">{isCert ? 'Certificate Course Result' : `Semester ${sem}`}</h6>
                                                                             <div className="table-responsive">
                                                                                 <table className="table table-bordered table-sm mb-2">
                                                                                     <thead className="table-light">
@@ -1487,8 +1488,10 @@ const AdminDashboard = () => {
                                                                 })}
                                                                 {sems.length >= requiredSems && (
                                                                     <div className="alert alert-success mt-3 mb-0">
-                                                                        <h6 className="fw-bold mb-1">Final Aggregate Result</h6>
-                                                                        <p className="mb-0">Average Percentage: <strong>{(totalAvg / requiredSems).toFixed(2)}%</strong></p>
+                                                                        <h6 className="fw-bold mb-1">
+                                                                            {isCert ? `Candidate's Overall Result` : `Candidate's Semester Based Score`}
+                                                                        </h6>
+                                                                        <p className="mb-0">Average Percentage: <strong>{(totalAvg / sems.length).toFixed(2)}%</strong></p>
                                                                     </div>
                                                                 )}
                                                             </div>

@@ -8,4 +8,13 @@
   "email": "rccsaikat@gmail.com",
   "phone": "9873214568",
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ab0cf8dd000f0aa5c0e6afe"
+  },
+  "username": "debapriya",
+  "password": "Debapriya@123",
+  "email": "debapriya@gmail.com",
+  "phone": "8974653214"
 }]

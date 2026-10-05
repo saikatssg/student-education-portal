@@ -149,7 +149,7 @@
       "score": 72,
       "max_score": 100,
       "_id": {
-        "$oid": "6aa50aa89ff84875ad449394"
+        "$oid": "6ab3c1105b547976adba0dd0"
       }
     },
     {
@@ -157,7 +157,7 @@
       "score": 78,
       "max_score": 100,
       "_id": {
-        "$oid": "6aa50aa89ff84875ad449395"
+        "$oid": "6ab3c1105b547976adba0dd1"
       }
     }
   ],
@@ -166,7 +166,12 @@
   "created_at": {
     "$date": "2026-09-12T08:17:44.481Z"
   },
-  "__v": 0
+  "__v": 1,
+  "contract_address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "current_hash": "0x349397d4ce6928bca32dbdb7b58cd00a726c2dfb813b42378879b8048f54400f",
+  "previous_hash": "Handled internally by Solidity state",
+  "transaction_details": "0xa36666d2aac6a9538b81c04594e12cf82020cd98e6a448d0c61b91be41876f63",
+  "transaction_hash": "0xa36666d2aac6a9538b81c04594e12cf82020cd98e6a448d0c61b91be41876f63"
 },
 {
   "_id": {
@@ -208,121 +213,6 @@
 },
 {
   "_id": {
-    "$oid": "6aa50f2330fa5563928dbb9a"
-  },
-  "semester": "1",
-  "examid": "EXID/CID/CCWD/01/012026/001/001",
-  "sid": "SID-002",
-  "__v": 0,
-  "batchcode": "CID/CCWD/01/012026/001",
-  "created_at": {
-    "$date": "2026-09-12T08:37:20.671Z"
-  },
-  "grade": "A",
-  "marks": [
-    {
-      "subject": "Web Design Basics",
-      "score": 85,
-      "max_score": 100
-    }
-  ],
-  "total_score": 85,
-  "rsultid": "RES/CID/CCWD/01/012026/001/SID-002/001"
-},
-{
-  "_id": {
-    "$oid": "6aa50f4030fa5563928dbb9e"
-  },
-  "sid": "SID-003",
-  "examid": "EXID/CID/CCWD/01/012026/001/001",
-  "semester": "1",
-  "__v": 0,
-  "batchcode": "CID/CCWD/01/012026/001",
-  "created_at": {
-    "$date": "2026-09-12T08:37:20.674Z"
-  },
-  "grade": "A",
-  "marks": [
-    {
-      "subject": "Web Design Basics",
-      "score": 85,
-      "max_score": 100
-    }
-  ],
-  "rsultid": "RES/CID/CCWD/01/012026/001/SID-003/001",
-  "total_score": 85
-},
-{
-  "_id": {
-    "$oid": "6aa50f4030fa5563928dbba0"
-  },
-  "sid": "SID-004",
-  "examid": "EXID/CID/CCWD/01/012026/001/001",
-  "semester": "1",
-  "__v": 0,
-  "batchcode": "CID/CCWD/01/012026/001",
-  "created_at": {
-    "$date": "2026-09-12T08:37:20.677Z"
-  },
-  "grade": "A",
-  "marks": [
-    {
-      "subject": "Web Design Basics",
-      "score": 85,
-      "max_score": 100
-    }
-  ],
-  "rsultid": "RES/CID/CCWD/01/012026/001/SID-004/001",
-  "total_score": 85
-},
-{
-  "_id": {
-    "$oid": "6aa50f4030fa5563928dbba2"
-  },
-  "sid": "SID-005",
-  "examid": "EXID/CID/CCWD/01/012026/001/001",
-  "semester": "1",
-  "__v": 0,
-  "batchcode": "CID/CCWD/01/012026/001",
-  "created_at": {
-    "$date": "2026-09-12T08:37:20.679Z"
-  },
-  "grade": "A",
-  "marks": [
-    {
-      "subject": "Web Design Basics",
-      "score": 85,
-      "max_score": 100
-    }
-  ],
-  "rsultid": "RES/CID/CCWD/01/012026/001/SID-005/001",
-  "total_score": 85
-},
-{
-  "_id": {
-    "$oid": "6aa50f4030fa5563928dbba4"
-  },
-  "sid": "SID-006",
-  "examid": "EXID/CID/CCWD/01/012026/001/001",
-  "semester": "1",
-  "__v": 0,
-  "batchcode": "CID/CCWD/01/012026/001",
-  "created_at": {
-    "$date": "2026-09-12T08:37:20.681Z"
-  },
-  "grade": "A",
-  "marks": [
-    {
-      "subject": "Web Design Basics",
-      "score": 85,
-      "max_score": 100
-    }
-  ],
-  "rsultid": "RES/CID/CCWD/01/012026/001/SID-006/001",
-  "total_score": 85
-},
-{
-  "_id": {
     "$oid": "6aa7cd689e942c87b7404b9c"
   },
   "rsultid": "RSID/EX-CID/BCA/03/092025/001/001",
@@ -335,7 +225,7 @@
       "score": 67,
       "max_score": 100,
       "_id": {
-        "$oid": "6aa7cd689e942c87b7404b9d"
+        "$oid": "6ab3e08718270d92ff7e1bc8"
       }
     },
     {
@@ -343,7 +233,7 @@
       "score": 75,
       "max_score": 100,
       "_id": {
-        "$oid": "6aa7cd689e942c87b7404b9e"
+        "$oid": "6ab3e08718270d92ff7e1bc9"
       }
     },
     {
@@ -351,7 +241,7 @@
       "score": 84,
       "max_score": 100,
       "_id": {
-        "$oid": "6aa7cd689e942c87b7404b9f"
+        "$oid": "6ab3e08718270d92ff7e1bca"
       }
     },
     {
@@ -359,7 +249,7 @@
       "score": 77,
       "max_score": 100,
       "_id": {
-        "$oid": "6aa7cd689e942c87b7404ba0"
+        "$oid": "6ab3e08718270d92ff7e1bcb"
       }
     },
     {
@@ -367,7 +257,7 @@
       "score": 85,
       "max_score": 100,
       "_id": {
-        "$oid": "6aa7cd689e942c87b7404ba1"
+        "$oid": "6ab3e08718270d92ff7e1bcc"
       }
     }
   ],
@@ -376,7 +266,12 @@
   "created_at": {
     "$date": "2026-09-14T10:33:12.005Z"
   },
-  "__v": 0
+  "__v": 1,
+  "contract_address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "current_hash": "0x804622f7972c2ab5cc346c1dfe479aa584884890418e67a2c062c25d44ce4c14",
+  "previous_hash": "Handled internally by Solidity state",
+  "transaction_details": "0x65ef25ae3af0ff303c873114b7389604d6e33573ed7bcccd24a6c8218787d343",
+  "transaction_hash": "0x65ef25ae3af0ff303c873114b7389604d6e33573ed7bcccd24a6c8218787d343"
 },
 {
   "_id": {
@@ -584,6 +479,354 @@
   "contract_address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
   "created_at": {
     "$date": "2026-09-17T11:28:32.140Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ab0d2ab617d33f210cf259a"
+  },
+  "rsultid": "RSID/EX-CID/BCA/03/092025/001/SID-009/1",
+  "examid": "EX-CID/BCA/03/092025/001",
+  "sid": "SID-009",
+  "semester": 1,
+  "marks": [
+    {
+      "subject": "Subject 1",
+      "score": 74,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6ab0d2ab617d33f210cf259b"
+      }
+    },
+    {
+      "subject": "Subject 2",
+      "score": 78,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6ab0d2ab617d33f210cf259c"
+      }
+    },
+    {
+      "subject": "Subject 3",
+      "score": 72,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6ab0d2ab617d33f210cf259d"
+      }
+    },
+    {
+      "subject": "Subject 4",
+      "score": 68,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6ab0d2ab617d33f210cf259e"
+      }
+    },
+    {
+      "subject": "Subject 5",
+      "score": 74,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6ab0d2ab617d33f210cf259f"
+      }
+    }
+  ],
+  "total_score": 366,
+  "grade": "B",
+  "previous_hash": "Handled internally by Solidity state",
+  "current_hash": "0x9bbe3ff7f0874196fe96050045a5de7dcd16bf4f335f487af8f4c7735a4609aa",
+  "transaction_details": "0x1c4b15671c520242c727cc2314c865d55a114365be5876cccacd50d8f4c78bb4",
+  "transaction_hash": "0x1c4b15671c520242c727cc2314c865d55a114365be5876cccacd50d8f4c78bb4",
+  "contract_address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "created_at": {
+    "$date": "2026-09-21T06:46:03.626Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ab0d3b4617d33f210cf25a1"
+  },
+  "rsultid": "RSID/EX-CID/BCA/03/092025/001/SID-012/1",
+  "examid": "EX-CID/BCA/03/092025/001",
+  "sid": "SID-012",
+  "semester": 1,
+  "marks": [
+    {
+      "subject": "Subject 1",
+      "score": 77,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6ab0d3b4617d33f210cf25a2"
+      }
+    },
+    {
+      "subject": "Subject 2",
+      "score": 65,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6ab0d3b4617d33f210cf25a3"
+      }
+    },
+    {
+      "subject": "Subject 3",
+      "score": 78,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6ab0d3b4617d33f210cf25a4"
+      }
+    },
+    {
+      "subject": "Subject 4",
+      "score": 82,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6ab0d3b4617d33f210cf25a5"
+      }
+    },
+    {
+      "subject": "Subject 5",
+      "score": 68,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6ab0d3b4617d33f210cf25a6"
+      }
+    }
+  ],
+  "total_score": 370,
+  "grade": "B",
+  "previous_hash": "Handled internally by Solidity state",
+  "current_hash": "0x932b9634cc2e174f03d406d5b8937f2a6a06b9b4a085caa2c9276cb84a9112f1",
+  "transaction_details": "0x9df7b84f098a4aba25dbbc1e0df2c06ef9c84d03f35ea99396ad6e14726cce79",
+  "transaction_hash": "0x9df7b84f098a4aba25dbbc1e0df2c06ef9c84d03f35ea99396ad6e14726cce79",
+  "contract_address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "created_at": {
+    "$date": "2026-09-21T06:50:28.226Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ab0e577617d33f210cf25a7"
+  },
+  "rsultid": "RSID/EX-CID/BCA/03/092025/001/SID-013/1",
+  "examid": "EX-CID/BCA/03/092025/001",
+  "sid": "SID-013",
+  "semester": 1,
+  "marks": [
+    {
+      "subject": "Subject 1",
+      "score": 87,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6ab0e577617d33f210cf25a8"
+      }
+    },
+    {
+      "subject": "Subject 2",
+      "score": 89,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6ab0e577617d33f210cf25a9"
+      }
+    },
+    {
+      "subject": "Subject 3",
+      "score": 94,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6ab0e577617d33f210cf25aa"
+      }
+    },
+    {
+      "subject": "Subject 4",
+      "score": 92,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6ab0e577617d33f210cf25ab"
+      }
+    },
+    {
+      "subject": "Subject 5",
+      "score": 88,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6ab0e577617d33f210cf25ac"
+      }
+    }
+  ],
+  "total_score": 450,
+  "grade": "A+",
+  "previous_hash": "Handled internally by Solidity state",
+  "current_hash": "0xebf17d660161b151a3051a91c3ece3fe09b56aa7806502ad233c8ca1fe53b044",
+  "transaction_details": "0x4cfaf68a32f1e9886ff24469a57f983d2237baf69cda8b391d8002c3ca5028d5",
+  "transaction_hash": "0x4cfaf68a32f1e9886ff24469a57f983d2237baf69cda8b391d8002c3ca5028d5",
+  "contract_address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "created_at": {
+    "$date": "2026-09-21T08:06:15.845Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ab0ec0a617d33f210cf25b5"
+  },
+  "rsultid": "RSID/EX-CID/DSC/01/092026/001/SID-003/1",
+  "examid": "EX-CID/DSC/01/092026/001",
+  "sid": "SID-003",
+  "semester": 1,
+  "marks": [
+    {
+      "subject": "Theory",
+      "score": 78,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6ab0ec0a617d33f210cf25b6"
+      }
+    },
+    {
+      "subject": "Practical",
+      "score": 82,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6ab0ec0a617d33f210cf25b7"
+      }
+    }
+  ],
+  "total_score": 160,
+  "grade": "A",
+  "previous_hash": "Handled internally by Solidity state",
+  "current_hash": "0xbf606e8597232834e95f770003d35f49c695aa1216a8acba13eb14b6b2a1ef5e",
+  "transaction_details": "0x777f6ca9b045aa96c159eefc00982257b8846e6fbf7c6bb2f082dc3ecba5d3d0",
+  "transaction_hash": "0x777f6ca9b045aa96c159eefc00982257b8846e6fbf7c6bb2f082dc3ecba5d3d0",
+  "contract_address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "created_at": {
+    "$date": "2026-09-21T08:34:18.694Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ab3c2205b547976adba0dd3"
+  },
+  "rsultid": "RSID/EX-CID/BCA/03/092025/001/SID-014/1",
+  "examid": "EX-CID/BCA/03/092025/001",
+  "sid": "SID-014",
+  "semester": 1,
+  "marks": [
+    {
+      "subject": "Subject 1",
+      "score": 74,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6ab3c2665b547976adba0dde"
+      }
+    },
+    {
+      "subject": "Subject 2",
+      "score": 82,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6ab3c2665b547976adba0ddf"
+      }
+    },
+    {
+      "subject": "Subject 3",
+      "score": 68,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6ab3c2665b547976adba0de0"
+      }
+    },
+    {
+      "subject": "Subject 4",
+      "score": 87,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6ab3c2665b547976adba0de1"
+      }
+    },
+    {
+      "subject": "Subject 5",
+      "score": 85,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6ab3c2665b547976adba0de2"
+      }
+    }
+  ],
+  "total_score": 396,
+  "grade": "B",
+  "previous_hash": "Handled internally by Solidity state",
+  "current_hash": "0x22cfb1dea6cc9949c6cb0103d39afbf5fd492268635413e83397455507f8a165",
+  "transaction_details": "0xaa97eab23811b8524370fc016528c0bd80c3b36beff6907546a08f0208c36327",
+  "transaction_hash": "0xaa97eab23811b8524370fc016528c0bd80c3b36beff6907546a08f0208c36327",
+  "contract_address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "created_at": {
+    "$date": "2026-09-23T12:12:16.148Z"
+  },
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "6ab790c97bad5d0ae415befb"
+  },
+  "rsultid": "RSID/EX-CID/BCA/03/092025/001/SID-015/1",
+  "examid": "EX-CID/BCA/03/092025/001",
+  "sid": "SID-015",
+  "semester": 1,
+  "marks": [
+    {
+      "subject": "Subject 1",
+      "score": 74,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6ab790c97bad5d0ae415befc"
+      }
+    },
+    {
+      "subject": "Subject 2",
+      "score": 75,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6ab790c97bad5d0ae415befd"
+      }
+    },
+    {
+      "subject": "Subject 3",
+      "score": 72,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6ab790c97bad5d0ae415befe"
+      }
+    },
+    {
+      "subject": "Subject 4",
+      "score": 81,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6ab790c97bad5d0ae415beff"
+      }
+    },
+    {
+      "subject": "Subject 5",
+      "score": 83,
+      "max_score": 100,
+      "_id": {
+        "$oid": "6ab790c97bad5d0ae415bf00"
+      }
+    }
+  ],
+  "total_score": 385,
+  "grade": "B",
+  "previous_hash": "Handled internally by Solidity state",
+  "current_hash": "0x8c72aa781dcb957402be95457ef0cf63665af177f02d8a88c63f748734c56e7f",
+  "transaction_details": "0x30d755d627532c5809dd3001cef9c839c570aee56a6c9a85d6c275dd9e4d9ff2",
+  "transaction_hash": "0x30d755d627532c5809dd3001cef9c839c570aee56a6c9a85d6c275dd9e4d9ff2",
+  "contract_address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "created_at": {
+    "$date": "2026-09-26T09:30:49.789Z"
   },
   "__v": 0
 }]

@@ -54,26 +54,35 @@
     "$oid": "6aa50917cc3e4f4720de41e3"
   },
   "sid": "SID-003",
-  "fname": "Emma",
-  "lname": "Johnson",
-  "username": "emma",
-  "password": "Emma@123",
-  "email": "emma@gmail.com",
+  "fname": "Bidisha",
+  "lname": "Paul",
+  "username": "bidisha",
+  "password": "Bidisha@123",
+  "email": "bidisha@gmail.com",
   "phone": "9999999991",
-  "city": "New York",
+  "city": "Kolkata",
   "dob": {
     "$date": "2000-01-01T00:00:00.000Z"
   },
   "photo": "1789200663064_media_1789200576417.jpg",
   "role": "candidate",
-  "batchcode": "CID/CCWD/01/012026/001",
-  "crtid": "CRT/CID/CCWD/01/012026/001/SID-003/001",
-  "prevCode": [],
+  "batchcode": "CID/DSC/01/092026/001",
+  "crtid": "CRT/CID/DSC/01/092026/001/SID-003/001",
+  "prevCode": [
+    {
+      "batchcode": "CID/CCWD/01/012026/001",
+      "courseid": "CID/CCWD/01/001",
+      "crtid": "CRT/CID/CCWD/01/012026/001/SID-003/001",
+      "_id": {
+        "$oid": "6ab0eb34617d33f210cf25ae"
+      }
+    }
+  ],
   "completed_batches": [],
   "created_at": {
     "$date": "2026-09-12T08:11:03.133Z"
   },
-  "__v": 0
+  "__v": 1
 },
 {
   "_id": {
@@ -358,13 +367,13 @@
     "$oid": "6aa54bb89ff84875ad4493a7"
   },
   "sid": "SID-015",
-  "fname": "Freya",
-  "lname": "Jones",
-  "username": "freya",
-  "password": "Freya@123",
-  "email": "freya@gmail.com",
+  "fname": "Debasmita",
+  "lname": "Roy",
+  "username": "debasmita",
+  "password": "Debasmita@123",
+  "email": "debasmita@gmail.com",
   "phone": "7698458793",
-  "city": "London",
+  "city": "Kolkata",
   "dob": {
     "$date": "2003-06-21T00:00:00.000Z"
   },
@@ -445,13 +454,22 @@
   },
   "photo": "1789389563234.jpg",
   "role": "candidate",
-  "prevCode": [],
+  "prevCode": [
+    {
+      "batchcode": "CID/DSC/01/092026/001",
+      "courseid": "CID/DSC/01/001",
+      "crtid": "CRT/CID/DSC/01/092026/001/SID-018/001",
+      "_id": {
+        "$oid": "6ab3c3795b547976adba0de4"
+      }
+    }
+  ],
   "created_at": {
     "$date": "2026-09-14T12:39:23.241Z"
   },
-  "__v": 0,
-  "batchcode": "CID/DSC/01/092026/001",
-  "crtid": "CRT/CID/DSC/01/092026/001/SID-018/001"
+  "__v": 1,
+  "batchcode": "CID/BCA/03/092025/001",
+  "crtid": null
 },
 {
   "_id": {
